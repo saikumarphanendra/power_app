@@ -1,0 +1,51 @@
+{
+  "0984c18a-8015-4a43-8dca-24335bb2422e": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://pratiantechnologies226.sharepoint.com/sites/ROS": {
+        "dataSources": {
+          "Admin login": {
+            "tableName": "6f6f2894-5925-498b-84f5-c0dea6a6688f"
+          },
+          "Branches": {
+            "tableName": "7c53ccb5-edee-4833-9b1f-cbb69e29d71b"
+          },
+          "Employee login": {
+            "tableName": "3b09c3db-2f51-4395-abfb-e609fd8bf476"
+          },
+          "Employees": {
+            "tableName": "2b422d2b-984e-496a-bcce-bb83b51106dd"
+          },
+          "Login": {
+            "tableName": "e362c4cb-ac4f-4f88-864f-76105dbf91fb"
+          },
+          "Restaurant Manager": {
+            "tableName": "8bf23768-3763-46c0-8572-a0250701e5e7"
+          },
+          "Restaurent login": {
+            "tableName": "fffed2c9-76f2-43dd-870e-e9e9eea8b81c"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Login",
+      "Branches",
+      "Employees",
+      "Restaurant Manager",
+      "Admin login",
+      "Employee login",
+      "Restaurent login"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0984c18a-8015-4a43-8dca-24335bb2422e"
+  }
+}

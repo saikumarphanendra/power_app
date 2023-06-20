@@ -1,0 +1,73 @@
+Success As screen:
+
+    Group7 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =9
+
+        Circle1 As circle:
+            Fill: =RGBA(204, 231, 246, 1)
+            Height: =300
+            Width: =300
+            X: =518
+            Y: =206
+            ZIndex: =1
+
+        Circle2 As circle:
+            Fill: =RGBA(0, 134, 208, 1)
+            Height: =200
+            Width: =200
+            X: =568
+            Y: =256
+            ZIndex: =2
+
+        Icon2_1 As icon.Check:
+            Height: =86
+            Icon: =Icon.CheckBadge
+            Width: =89
+            X: =623
+            Y: =313
+            ZIndex: =3
+
+        Label8 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =63
+            Size: =15
+            Text: ="Successfully Signed in to "
+            Width: =315
+            X: =473
+            Y: =114
+            ZIndex: =4
+
+        Image1_1 As image:
+            Height: =70
+            Image: ='download-removebg-preview (8)'
+            Width: =81
+            X: =757
+            Y: =110
+            ZIndex: =6
+
+        Label9 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            OnSelect: =Navigate('admin Dashboard')
+            Size: =18
+            Text: ="Next"
+            Width: =99
+            X: =1112
+            Y: =662
+            ZIndex: =7
+
+        Arrow1 As arrow:
+            DisabledBorderColor: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            OnSelect: |-
+                =Navigate('admin Dashboard',Transition.None,{username1:username1});
+                Set(lists,Branches)
+            X: =1196
+            Y: =659
+            ZIndex: =8
+

@@ -1,0 +1,205 @@
+"'Admin Login' As screen":
+    BackgroundImage: ='ROS BG'
+    ImagePosition: =ImagePosition.Fill
+
+    Rectangle2_2 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =530
+        Width: =432
+        X: =461
+        Y: =100
+        ZIndex: =1
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =6
+
+        Image2_1 As image:
+            Height: =122
+            Image: ='download-removebg-preview (8)'
+            Width: =155
+            X: =595
+            Y: =100
+            ZIndex: =2
+
+        Button2_1 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            Height: =48
+            OnSelect: |-
+                =Set(username1,DataCardValue1);
+                Navigate(Success,Transition.None,{username1:DataCardValue1})
+            Text: ="Sign in"
+            Width: =188
+            X: =595
+            Y: =560
+            ZIndex: =3
+
+        Form1 As form:
+            DataSource: ='Admin login'
+            DefaultMode: =FormMode.New
+            Height: =291
+            NumberOfColumns: =1
+            Width: =395
+            X: =492
+            Y: =269
+            ZIndex: =4
+
+            Title_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Title"
+                Default: =ThisItem.Title
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Admin login'],DataSourceInfo.DisplayName,"Title")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Admin login'], DataSourceInfo.MaxLength, "Title")
+                Required: =true
+                Update: =DataCardValue1.Text
+                Width: =395
+                X: =0
+                Y: =0
+                ZIndex: =8
+
+                DataCardKey1 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: ="Email"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    HintText: ="Enter Your Email"
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1.Y + DataCardValue1.Height
+                    ZIndex: =3
+
+                StarVisible1 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1.Y
+                    ZIndex: =4
+
+            Password_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Password"
+                Default: =ThisItem.Password
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Admin login'],DataSourceInfo.DisplayName,"Password")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Admin login'], DataSourceInfo.MaxLength, "Password")
+                Required: =false
+                Update: =DataCardValue2.Text
+                Width: =395
+                X: =0
+                Y: =1
+                ZIndex: =8
+
+                DataCardKey2 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue2 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    HintText: ="Your Password"
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage2 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue2.Y + DataCardValue2.Height
+                    ZIndex: =3
+
+                StarVisible2 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey2.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey2.Y
+                    ZIndex: =4
+
+        Label6_1 As label:
+            Color: =RGBA(0, 134, 208, 1)
+            Height: =28
+            Text: ="Forgot your password?"
+            Underline: =true
+            Width: =211
+            X: =519
+            Y: =461
+            ZIndex: =5
+
+        Label7_2 As label:
+            FontWeight: =FontWeight.Semibold
+            Size: =15
+            Text: ="Admin Login"
+            X: =602
+            Y: =207
+            ZIndex: =6
+

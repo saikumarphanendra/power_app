@@ -1,0 +1,200 @@
+managerDashboard As screen:
+
+    Rectangle2_1 As rectangle:
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle3_1 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =152
+        OnSelect: =Set(lists,Branches)
+        Width: =196
+        X: =230
+        Y: =161
+        ZIndex: =2
+
+    Label5_6 As label:
+        Align: =Align.Center
+        Fill: =RGBA(219, 219, 219, 1)
+        Font: =Font.'Lato Black'
+        Height: =49
+        Size: =30
+        Text: =CountRows(Branches)
+        Width: =104
+        X: =413
+        Y: =270
+        ZIndex: =3
+
+    Label7_6 As label:
+        Align: =Align.Center
+        Font: =Font.Lato
+        Height: =76
+        Size: =30
+        Text: ="Branches"
+        Width: =195
+        X: =368
+        Y: =186
+        ZIndex: =4
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =339
+        Items: =lists
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(adminDashboardList)
+        TemplatePadding: =0
+        TemplateSize: =104
+        X: =230
+        Y: =429
+        ZIndex: =5
+
+        Title1_1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =41
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =99
+            X: =476
+            Y: =34
+            ZIndex: =2
+
+        Subtitle1_1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =55
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =25
+            Text: =ThisItem.Branchname
+            VerticalAlign: =VerticalAlign.Top
+            Width: =345
+            X: =35
+            Y: =27
+            ZIndex: =3
+
+        Separator1_1 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =96
+            ZIndex: =5
+
+        Rectangle4_1 As rectangle:
+            Height: =Parent.TemplateHeight - Separator1_1.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =4
+            ZIndex: =6
+
+    Label7_5 As label:
+        Align: =Align.Center
+        Font: =Font.Lato
+        Height: =76
+        Size: =30
+        Text: ="Employees"
+        Width: =236
+        X: =860
+        Y: =173
+        ZIndex: =6
+
+    Label5_5 As label:
+        Align: =Align.Center
+        Fill: =RGBA(219, 219, 219, 1)
+        Font: =Font.'Lato Black'
+        Height: =50
+        Size: =30
+        Text: =CountRows(Employees)
+        Width: =101
+        X: =928
+        Y: =262
+        ZIndex: =7
+
+    Button3_7 As button:
+        BorderColor: =RGBA(202,202,202,1)
+        Color: =RGBA(219, 219, 219, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =188
+        HoverFill: =RGBA(202, 202, 202, 0.32)
+        OnSelect: =Set(lists,Employees)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =299
+        X: =829
+        Y: =150
+        ZIndex: =9
+
+    Button3_8 As button:
+        BorderColor: =RGBA(202,202,202,1)
+        Color: =RGBA(219, 219, 219, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =188
+        HoverFill: =RGBA(209, 205, 205, 0.27)
+        OnSelect: =Set(lists,Branches)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =
+        Width: =299
+        X: =321
+        Y: =150
+        ZIndex: =10
+
+    Icon2_2 As icon.Hamburger:
+        Height: =40
+        Icon: =Icon.Hamburger
+        OnSelect: =If(menu=true,Set(menu,false),Set(menu,true))
+        Width: =52
+        X: =19
+        Y: =38
+        ZIndex: =11
+
+    PieChart1_1 As pieChart:
+        Height: =321
+        ItemBorderColor: =RGBA(219, 219, 219, 1)
+        Items: =lists
+        Width: =496
+        X: =870
+        Y: =447
+        ZIndex: =17
+
+    Label10_1 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =54
+        Size: =20
+        Text: =Concatenate("Hi, ",username1)
+        Width: =313
+        X: =231
+        Y: =107
+        ZIndex: =18
+
+    Icon4 As icon.Person:
+        Icon: =Icon.Person
+        X: =1291
+        Y: =14
+        ZIndex: =25
+
+    Image4 As image:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =74
+        Image: ='download-removebg-preview (8)'
+        Width: =116
+        X: =71
+        Y: =9
+        ZIndex: =26
+

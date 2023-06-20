@@ -1,0 +1,14 @@
+"'RM Dashboard' As screen":
+
+    Rectangle6 As rectangle:
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =2
+
+    Icon3 As icon.Hamburger:
+        Icon: =Icon.Hamburger
+        X: =22
+        Y: =28
+        ZIndex: =3
+

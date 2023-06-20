@@ -1,0 +1,251 @@
+"'admin Dashboard_2' As screen":
+
+    Rectangle2_4 As rectangle:
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle3_3 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =152
+        OnSelect: =Set(lists,Branches)
+        Width: =196
+        X: =230
+        Y: =161
+        ZIndex: =2
+
+    Label5_9 As label:
+        Align: =Align.Center
+        Fill: =RGBA(219, 219, 219, 1)
+        Font: =Font.'Lato Black'
+        Height: =49
+        Size: =30
+        Text: =CountRows(Branches)
+        Width: =104
+        X: =276
+        Y: =279
+        ZIndex: =3
+
+    Label7_9 As label:
+        Align: =Align.Center
+        Font: =Font.Lato
+        Height: =76
+        Size: =20
+        Text: ="Branches"
+        X: =253
+        Y: =182
+        ZIndex: =4
+
+    "Gallery1_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =339
+        Items: =Branches
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(adminDashboardList)
+        TemplatePadding: =0
+        TemplateSize: =104
+        Width: =1136
+        X: =230
+        Y: =429
+        ZIndex: =5
+
+        Title1_3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =41
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =99
+            X: =476
+            Y: =34
+            ZIndex: =2
+
+        Subtitle1_3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =55
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =25
+            Text: =ThisItem.Branchname
+            VerticalAlign: =VerticalAlign.Top
+            Width: =345
+            X: =35
+            Y: =27
+            ZIndex: =3
+
+        Separator1_3 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =96
+            ZIndex: =5
+
+        Rectangle4_3 As rectangle:
+            Height: =Parent.TemplateHeight - Separator1_3.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =4
+            ZIndex: =6
+
+    Label7_10 As label:
+        Align: =Align.Center
+        Font: =Font.Lato
+        Height: =76
+        Size: =20
+        Text: ="Employees"
+        Width: =173
+        X: =544
+        Y: =182
+        ZIndex: =6
+
+    Label5_10 As label:
+        Align: =Align.Center
+        Fill: =RGBA(219, 219, 219, 1)
+        Font: =Font.'Lato Black'
+        Height: =50
+        Size: =30
+        Text: =CountRows(Employees)
+        Width: =101
+        X: =580
+        Y: =279
+        ZIndex: =7
+
+    Component1_3 As admin:
+        Height: =620
+        Visible: =menu
+        Width: =172
+        Y: =92
+        ZIndex: =8
+
+    Button3_12 As button:
+        BorderColor: =RGBA(202,202,202,1)
+        Color: =RGBA(219, 219, 219, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =152
+        HoverFill: =RGBA(202, 202, 202, 0.32)
+        OnSelect: =Set(lists,Employees)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =195
+        X: =534
+        Y: =176
+        ZIndex: =9
+
+    Button3_11 As button:
+        BorderColor: =RGBA(202,202,202,1)
+        Color: =RGBA(219, 219, 219, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =152
+        HoverFill: =RGBA(209, 205, 205, 0.27)
+        OnSelect: =Set(lists,Branches)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =
+        Width: =195
+        X: =231
+        Y: =176
+        ZIndex: =10
+
+    Icon2_5 As icon.Hamburger:
+        Height: =44
+        Icon: =Icon.Hamburger
+        OnSelect: =If(menu=true,Set(menu,false),Set(menu,true))
+        Width: =54
+        X: =15
+        Y: =34
+        ZIndex: =11
+
+    Label7_11 As label:
+        Align: =Align.Center
+        Font: =Font.Lato
+        Height: =76
+        Size: =20
+        Text: ="Managers"
+        Width: =173
+        X: =836
+        Y: =182
+        ZIndex: =12
+
+    Label5_11 As label:
+        Align: =Align.Center
+        Fill: =RGBA(219, 219, 219, 1)
+        Font: =Font.'Lato Black'
+        Height: =50
+        Size: =30
+        Text: =CountRows('Restaurant Manager')
+        Width: =101
+        X: =883
+        Y: =279
+        ZIndex: =13
+
+    Button3_13 As button:
+        BorderColor: =RGBA(202,202,202,1)
+        Color: =RGBA(219, 219, 219, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =152
+        HoverFill: =RGBA(201, 197, 197, 0.3)
+        OnSelect: =Set(lists,'Restaurant Manager')
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: =""
+        Width: =195
+        X: =836
+        Y: =177
+        ZIndex: =14
+
+    Label10_3 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =54
+        Size: =20
+        Text: =Concatenate("Hi, ",username1)
+        Width: =313
+        X: =231
+        Y: =107
+        ZIndex: =18
+
+    Icon6_2 As icon.Person:
+        Icon: =Icon.Person
+        OnSelect: |
+            =Set(clicked,!clicked);
+        X: =1284
+        Y: =14
+        ZIndex: =19
+
+    Image5_2 As image:
+        Height: =74
+        Image: ='download-removebg-preview (8)'
+        Width: =116
+        X: =120
+        Y: =14
+        ZIndex: =20
+
+    Button4_2 As button:
+        Fill: =RGBA(0, 94, 146, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Text: ="Sign out"
+        Visible: =clicked
+        X: =1206
+        Y: =88
+        ZIndex: =21
+

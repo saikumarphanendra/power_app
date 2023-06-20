@@ -1,0 +1,40 @@
+"'manager-1' As CanvasComponent":
+    Fill: =RGBA(237, 237, 237, 1)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    "Gallery2_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Fill: =RGBA(0, 16, 96, 1)
+        Height: =640
+        Items: =["Dashboard","Branches","Employee","Leave Requests","Transfer Employee"]
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |
+            =If(ThisItem.IsSelected,RGBA(153,207,236,1),RGBA(102,182,227,1));
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =84
+        Transition: =Transition.Push
+        ZIndex: =5
+
+        Rectangle5_3 As rectangle:
+            Height: =Parent.TemplateHeight - Separator2.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =4
+            ZIndex: =6
+
+        Button2_4 As button:
+            Fill: =RGBA(102, 182, 227, 1)
+            Font: =Font.Lato
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.Value
+            X: =4
+            Y: =19
+            ZIndex: =7
+
