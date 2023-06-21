@@ -1,4 +1,5 @@
 Component1 As CanvasComponent:
+    CustomProperty1: ="Text"
     Fill: =RGBA(0, 94, 146, 1)
     Height: =640
     Width: =150
@@ -21,7 +22,7 @@ Component1 As CanvasComponent:
         Fill: =RGBA(102, 182, 227, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Normal
-        OnSelect: =
+        OnSelect: =Navigate(managerDashboard)
         Size: =12
         Text: ="Managers"
         Width: =150
@@ -32,6 +33,7 @@ Component1 As CanvasComponent:
         Fill: =RGBA(102, 182, 227, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Normal
+        OnSelect: =Navigate(Restaurants)
         Size: =12
         Text: ="Branches"
         Width: =150

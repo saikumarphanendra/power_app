@@ -184,14 +184,6 @@
             Y: =10
             ZIndex: =15
 
-            Value2 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Value"
-                FieldName: ="Value"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =16
-
     TextCanvas1_12 As Text:
         Alignment: ='TextCanvas.Alignment'.Start
         As: ='TextCanvas.As'.Span
