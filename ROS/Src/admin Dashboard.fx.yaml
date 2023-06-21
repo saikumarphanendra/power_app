@@ -6,16 +6,6 @@
         Width: =1366
         ZIndex: =1
 
-    Rectangle3 As rectangle:
-        BorderColor: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =152
-        OnSelect: =Set(lists,Branches)
-        Width: =196
-        X: =230
-        Y: =161
-        ZIndex: =2
-
     Label5 As label:
         Align: =Align.Center
         Fill: =RGBA(219, 219, 219, 1)
@@ -24,18 +14,19 @@
         Size: =30
         Text: =CountRows(Branches)
         Width: =104
-        X: =276
-        Y: =279
+        X: =315
+        Y: =269
         ZIndex: =3
 
     Label7 As label:
         Align: =Align.Center
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
         Height: =76
-        Size: =20
+        Size: =25
         Text: ="Branches"
-        X: =253
-        Y: =182
+        X: =292
+        Y: =177
         ZIndex: =4
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -48,7 +39,8 @@
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(adminDashboardList)
         TemplatePadding: =0
-        TemplateSize: =104
+        TemplateSize: =82
+        Width: =976
         X: =230
         Y: =429
         ZIndex: =5
@@ -61,28 +53,28 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =20
+            Size: =16
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =99
-            X: =476
-            Y: =34
+            X: =732
+            Y: =27
             ZIndex: =2
 
         Subtitle1 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =55
+            Height: =31
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =25
+            Size: =20
             Text: =ThisItem.Branchname
             VerticalAlign: =VerticalAlign.Top
-            Width: =345
-            X: =35
-            Y: =27
+            Width: =205
+            X: =16
+            Y: =21
             ZIndex: =3
 
         Separator1 As rectangle:
@@ -102,12 +94,13 @@
     Label7_1 As label:
         Align: =Align.Center
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
         Height: =76
-        Size: =20
+        Size: =25
         Text: ="Employees"
         Width: =173
-        X: =544
-        Y: =182
+        X: =617
+        Y: =177
         ZIndex: =6
 
     Label5_1 As label:
@@ -118,8 +111,8 @@
         Size: =30
         Text: =CountRows(Employees)
         Width: =101
-        X: =580
-        Y: =279
+        X: =633
+        Y: =269
         ZIndex: =7
 
     Component1_1 As admin:
@@ -141,9 +134,9 @@
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: =""
-        Width: =195
-        X: =534
-        Y: =176
+        Width: =263
+        X: =575
+        Y: =168
         ZIndex: =9
 
     Button3 As button:
@@ -158,9 +151,9 @@
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: =
-        Width: =195
-        X: =231
-        Y: =176
+        Width: =263
+        X: =236
+        Y: =168
         ZIndex: =10
 
     Icon2 As icon.Hamburger:
@@ -172,13 +165,15 @@
 
     Label7_3 As label:
         Align: =Align.Center
+        Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
         Height: =76
-        Size: =20
+        Size: =25
         Text: ="Managers"
         Width: =173
-        X: =836
-        Y: =182
+        X: =965
+        Y: =177
         ZIndex: =12
 
     Label5_2 As label:
@@ -187,10 +182,10 @@
         Font: =Font.'Lato Black'
         Height: =50
         Size: =30
-        Text: =CountRows('Restaurant Manager')
+        Text: =CountRows('Restaurant Manager_1')
         Width: =101
-        X: =883
-        Y: =279
+        X: =1001
+        Y: =270
         ZIndex: =13
 
     Button3_5 As button:
@@ -205,19 +200,10 @@
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: =""
-        Width: =195
-        X: =836
-        Y: =177
+        Width: =263
+        X: =920
+        Y: =168
         ZIndex: =14
-
-    PieChart1 As pieChart:
-        Height: =339
-        ItemBorderColor: =RGBA(219, 219, 219, 1)
-        Items: =lists
-        Width: =496
-        X: =870
-        Y: =415
-        ZIndex: =17
 
     Label10 As label:
         FontWeight: =FontWeight.Semibold
@@ -260,19 +246,26 @@
     Label12 As label:
         BorderColor: =RGBA(202, 202, 202, 1)
         BorderThickness: =1
+        Color: =RGBA(0, 121, 187, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Courier New'
         Height: =54
         Size: =20
         Text: ="Branch Name"
-        Width: =640
+        Width: =976
         X: =230
         Y: =375
         ZIndex: =22
 
     Label20 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        Font: =Font.'Courier New'
+        Height: =47
         Size: =20
         Text: |-
             ="Branch ID :"
-        X: =670
+        Width: =196
+        X: =906
         Y: =382
         ZIndex: =23
 

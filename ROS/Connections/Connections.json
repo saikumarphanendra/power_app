@@ -26,8 +26,8 @@
           "Login": {
             "tableName": "e362c4cb-ac4f-4f88-864f-76105dbf91fb"
           },
-          "Restaurant Manager": {
-            "tableName": "8bf23768-3763-46c0-8572-a0250701e5e7"
+          "Restaurant Manager_1": {
+            "tableName": "8d6f31a4-5f8c-4b88-9bb6-680d4d617e4d"
           },
           "Restaurent login": {
             "tableName": "fffed2c9-76f2-43dd-870e-e9e9eea8b81c"
@@ -39,10 +39,10 @@
       "Login",
       "Branches",
       "Employees",
-      "Restaurant Manager",
       "Admin login",
       "Employee login",
-      "Restaurent login"
+      "Restaurent login",
+      "Restaurant Manager_1"
     ],
     "dependencies": {},
     "dependents": [],
