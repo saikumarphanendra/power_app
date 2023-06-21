@@ -1,17 +1,10 @@
-"'employee-4' As screen":
+"'employee-1_2' As screen":
 
     Rectangle2_7 As rectangle:
         Fill: =RGBA(102, 182, 227, 1)
         Height: =92
         Width: =1366
         ZIndex: =1
-
-    Icon2_8 As icon.Hamburger:
-        Icon: =Icon.Hamburger
-        OnSelect: =If(menu=true,Set(menu,false),Set(menu,true))
-        X: =40
-        Y: =14
-        ZIndex: =11
 
     Icon6_5 As icon.Person:
         Height: =42
@@ -27,8 +20,8 @@
         Height: =74
         Image: ='download-removebg-preview (8)'
         Width: =116
-        X: =120
-        Y: =14
+        X: =105
+        Y: =9
         ZIndex: =20
 
     Button4_5 As button:
@@ -45,10 +38,9 @@
         Y: =34
         ZIndex: =21
 
-    "'manager-1_4' As 'manager-1'":
-        Height: =626
-        Visible: =menu
-        Width: =168
-        Y: =92
+    Arrow2_2 As arrow.backArrow:
+        BorderColor: =RGBA(0, 94, 146, 1)
+        X: =15
+        Y: =25
         ZIndex: =22
 
