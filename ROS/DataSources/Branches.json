@@ -33,8 +33,6 @@
       "ID": "ID",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "Restaurant": "Restaurant",
-      "Restaurant#Id": "Restaurant Id",
       "Title": "Title"
     },
     "DatasetName": "https://pratiantechnologies226.sharepoint.com/sites/ROS",
