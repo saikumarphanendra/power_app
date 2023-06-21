@@ -1,8 +1,8 @@
 Component2 As CanvasComponent:
     CustomProperty1: |-
-        =Table({manulabel: "Dashboard",menuscreennavigate:'admin Dashboard',menuId:1},{manulabel: "Employees",menuscreennavigate:Employee,menuId:2},{manulabel: "Manager",menuscreennavigate:managerDashboard,menuId:3},
-        {manulabel: "Branches",menuscreennavigate:,menuId:4)
-    Fill: =RGBA(255, 255, 255, 1)
+        =Table({manulabel: "Dashboard",menuscreennavigate:'admin Dashboard',menuId:1},{manulabel: "Employees",menuscreennavigate:'employee-1',menuId:2},{manulabel: "Manager",menuscreennavigate:managerDashboard,menuId:3},
+        {manulabel: "Branches",menuscreennavigate:Employee,menuId:4},{manulabel: "Onboarding Requests",menuscreennavigate:Employee,menuId:4})
+    Fill: =RGBA(0, 94, 146, 1)
     Height: =640
     Width: =150
     X: =0
@@ -20,25 +20,13 @@ Component2 As CanvasComponent:
         Width: =Component2.Width
         ZIndex: =1
 
-        Subtitle2 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.manulabel
-            VerticalAlign: =VerticalAlign.Top
-            Width: =0
-            X: =
-            ZIndex: =1
-
         Rectangle3 As rectangle:
-            Height: =Parent.TemplateHeight - Separator2.Height
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =46
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
-            Width: =4
+            Width: =9
             ZIndex: =3
 
         Button5 As button:
@@ -47,16 +35,19 @@ Component2 As CanvasComponent:
             OnSelect: =Navigate(ThisItem.menuscreennavigate,Transition.None)
             Text: =""
             Width: =150
-            Y: =21
+            Y: =9
             ZIndex: =4
 
         Label21 As label:
+            Align: =Align.Center
             Fill: =RGBA(102, 182, 227, 1)
             Height: =37
             OnSelect: =Select(Parent)
+            Size: =10
             Text: =ThisItem.manulabel
+            VerticalAlign: =VerticalAlign.Bottom
             Width: =141
             X: =9
-            Y: =21
+            Y: =9
             ZIndex: =5
 
