@@ -20,7 +20,7 @@
         Height: =74
         Image: ='download-removebg-preview (8)'
         Width: =116
-        X: =105
+        X: =188
         Y: =9
         ZIndex: =20
 
@@ -333,13 +333,29 @@
         Y: =680
         ZIndex: =36
 
-    Icon5_1 As icon.Add:
-        Height: =30
-        Icon: =Icon.Add
+    Button5 As button:
         OnSelect: =NewForm(Form2_1);Navigate('employee-1_1')
-        Tooltip: ="Add Emp"
-        Width: =38
-        X: =1285
-        Y: =159
+        Text: ="Add User"
+        X: =1150
+        Y: =124
         ZIndex: =37
+
+    BranchDropdown As Dropdown.pcfdataset:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Items: |
+            =Branches
+        OnChange: =false
+        Width: =320
+        X: =782
+        Y: =124
+        ZIndex: =38
+
+        Location2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Location"
+            FieldName: ="Branchname"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =17
 
