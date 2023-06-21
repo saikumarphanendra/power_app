@@ -380,7 +380,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue26.Selected
+            Update: =EmployeeId.Selected
             Width: =558
             X: =0
             Y: =2
@@ -396,7 +396,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue26 As combobox:
+            EmployeeId As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -404,7 +404,7 @@
                 Items: =Choices([@'Move Employee_2'].EmpId)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_2'.EmpId,DataCardValue26.SearchText)
+                SearchItems: =Choices('Move Employee_2'.EmpId,EmployeeId.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -424,7 +424,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue26.Y + DataCardValue26.Height
+                Y: =EmployeeId.Y + EmployeeId.Height
                 ZIndex: =3
 
             StarVisible28 As label:
@@ -640,7 +640,8 @@
             =SubmitForm(Form5);
             Navigate('employee-1_3');
             ClickabuttoninPowerAppstosendanemail.Run("RajasriManasaBepeta@PratianTechnologies226.onmicrosoft.com","Move Employee Request","Manager has sent a request to Move You to other Restaurant");
-            Sendapprovalandfollowupviaemail.Run("Priyanka.M@PratianTechnologies226.onmicrosoft.com","RajasriManasaBepeta@PratianTechnologies226.onmicrosoft.com");
+            AddanitemtoSharePointandsendanemail.Run();
+            
             
         Text: |-
             ="Proceed
