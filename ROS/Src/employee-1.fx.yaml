@@ -46,15 +46,15 @@
 
     Gallery1_4 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Fill: =RGBA(215, 223, 240, 1)
+        Fill: =RGBA(153, 207, 236, 1)
         Height: =387
         Items: =Employees
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =56
-        Width: =1213
-        X: =86
-        Y: =215
+        TemplateSize: =52
+        Width: =1281
+        X: =42
+        Y: =247
         ZIndex: =24
 
         "FName As 'Text input'":
@@ -93,7 +93,7 @@
             Mode: ='TextInputCanvas.Mode'.SingleLine
             Value: =ThisItem.EmpId
             Width: =82
-            X: =1058
+            X: =1004
             Y: =6
             ZIndex: =4
 
@@ -103,8 +103,8 @@
             Mode: ='TextInputCanvas.Mode'.SingleLine
             Value: =ThisItem.Address
             Width: =106
-            X: =910
-            Y: =10
+            X: =894
+            Y: =2
             ZIndex: =5
 
         gender As Dropdown.pcfdataset:
@@ -126,26 +126,6 @@
                 Order: =1
                 ZIndex: =12
 
-        TOEmployee As Dropdown.pcfdataset:
-            DefaultSelectedItems: =ThisItem.TypeOfEmployee
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: |+
-                =Choices(Employees.TypeOfEmployee)
-                
-            Width: =102
-            X: =636
-            Y: =8
-            ZIndex: =7
-
-            Value2 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Value"
-                FieldName: ="Value"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =13
-
         TypeofEmploymnt As Dropdown.pcfdataset:
             DefaultSelectedItems: =ThisItem.TypeOfEmployment
             DisplayMode: =DisplayMode.Edit
@@ -164,23 +144,12 @@
                 Order: =1
                 ZIndex: =14
 
-        "branch As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =30
-            Mode: ='TextInputCanvas.Mode'.SingleLine
-            Value: |
-                =ThisItem.Branch
-            Width: =88
-            X: =1115
-            Y: =6
-            ZIndex: =10
-
         "mail As 'Text input'":
             DisplayMode: =DisplayMode.Edit
-            Height: =32
+            Height: =36
             Mode: ='TextInputCanvas.Mode'.SingleLine
             Value: =ThisItem.email
-            Width: =152
+            Width: =140
             X: =462
             Y: =8
             ZIndex: =11
@@ -188,130 +157,189 @@
         Icon4_1 As icon.NextArrow:
             Height: =34
             Icon: =Icon.NextArrow
-            OnSelect: =EditForm(Form2); Navigate('employee-2')
+            OnSelect: =EditForm(Form2_1); Navigate('employee-1_1')
             Tooltip: ="Edit Form"
             Width: =22
-            X: =1160
+            X: =1212
             Y: =10
             ZIndex: =13
 
-    BadgeCanvas1_1 As Badge:
-        Appearance: ='BadgeCanvas.Appearance'.Tint
-        Content: =
-        DisplayMode: =DisplayMode.Edit
-        Height: =52
-        Shape: ='BadgeCanvas.Shape'.Square
-        ThemeColor: ='BadgeCanvas.ThemeColor'.Brand
-        Width: =1213
-        X: =65
-        Y: =163
-        ZIndex: =25
+        "empid_1 As 'Text input'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =30
+            Mode: ='TextInputCanvas.Mode'.SingleLine
+            Value: =ThisItem.Branch
+            Width: =82
+            X: =1108
+            Y: =6
+            ZIndex: =14
 
-    TextCanvas1 As Text:
+        DropdownCanvas1 As Dropdown.pcfdataset:
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Items: |
+                =Choices(Employees.TypeOfEmployee)
+            Width: =128
+            X: =612
+            Y: =10
+            ZIndex: =15
+
+    TextCanvas1_12 As Text:
         Alignment: ='TextCanvas.Alignment'.Start
         As: ='TextCanvas.As'.Span
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        Text: ="LName"
+        Text: |
+            ="Branch"
         Weight: ='TextCanvas.Weight'.Regular
-        Width: =96
-        X: =213
-        Y: =173
-        ZIndex: =26
+        Width: =101
+        X: =1150
+        Y: =202
+        ZIndex: =35
 
-    TextCanvas1_1 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="FName"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =96
-        X: =86
-        Y: =173
-        ZIndex: =27
+    Group8 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =35
 
-    TextCanvas1_4 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="Phone num"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =96
-        X: =333
-        Y: =173
-        ZIndex: =28
+        BadgeCanvas1_1 As Badge:
+            Appearance: ='BadgeCanvas.Appearance'.Tint
+            Content: =
+            DisplayMode: =DisplayMode.Edit
+            Height: =52
+            Shape: ='BadgeCanvas.Shape'.Square
+            ThemeColor: ='BadgeCanvas.ThemeColor'.Brand
+            Width: =1281
+            X: =42
+            Y: =195
+            ZIndex: =25
 
-    TextCanvas1_5 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="Gender"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =96
-        X: =449
-        Y: =173
-        ZIndex: =29
+        TextCanvas1 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="LName"
+            Weight: ='TextCanvas.Weight'.Bold
+            Width: =101
+            X: =188
+            Y: =205
+            ZIndex: =26
 
-    TextCanvas1_6 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="Email"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =96
-        X: =566
-        Y: =173
-        ZIndex: =30
+        TextCanvas1_1 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="FName"
+            Weight: ='TextCanvas.Weight'.Bold
+            Width: =101
+            X: =74
+            Y: =205
+            ZIndex: =27
 
-    TextCanvas1_7 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="TypeOfEmployee"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =96
-        X: =723
-        Y: =173
-        ZIndex: =31
+        TextCanvas1_4 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="Phone num"
+            Weight: ='TextCanvas.Weight'.Regular
+            Width: =101
+            X: =289
+            Y: =205
+            ZIndex: =28
 
-    TextCanvas1_9 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="TypeOfEmployment"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =44
-        X: =876
-        Y: =173
-        ZIndex: =32
+        TextCanvas1_5 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="Gender"
+            Weight: ='TextCanvas.Weight'.Regular
+            Width: =101
+            X: =409
+            Y: =205
+            ZIndex: =29
 
-    TextCanvas1_10 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="Location"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =96
-        X: =1007
-        Y: =173
-        ZIndex: =33
+        TextCanvas1_6 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="Email"
+            Weight: ='TextCanvas.Weight'.Regular
+            Width: =101
+            X: =535
+            Y: =205
+            ZIndex: =30
 
-    TextCanvas1_11 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Text: ="EmpId"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =96
-        X: =1142
-        Y: =173
-        ZIndex: =34
+        TextCanvas1_7 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="TypeOfEmployee"
+            Weight: ='TextCanvas.Weight'.Regular
+            Width: =101
+            X: =659
+            Y: =205
+            ZIndex: =31
+
+        TextCanvas1_9 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="TypeOfEmployment"
+            Weight: ='TextCanvas.Weight'.Regular
+            Width: =135
+            X: =800
+            Y: =205
+            ZIndex: =32
+
+        TextCanvas1_10 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="Address"
+            Weight: ='TextCanvas.Weight'.Regular
+            Width: =101
+            X: =960
+            Y: =205
+            ZIndex: =33
+
+        TextCanvas1_11 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: ="EmpId"
+            Weight: ='TextCanvas.Weight'.Regular
+            Width: =101
+            X: =1061
+            Y: =205
+            ZIndex: =34
+
+    Button2_5 As button:
+        Height: =36
+        OnSelect: =NewForm(Form5);Navigate('employee-1_2')
+        Text: ="Move Employee"
+        Width: =192
+        X: =1124
+        Y: =680
+        ZIndex: =36
+
+    Icon5_1 As icon.Add:
+        Height: =30
+        Icon: =Icon.Add
+        OnSelect: =NewForm(Form2_1);Navigate('employee-1_1')
+        Tooltip: ="Add Emp"
+        Width: =38
+        X: =1285
+        Y: =159
+        ZIndex: =37
 
