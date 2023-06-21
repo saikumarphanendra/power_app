@@ -314,7 +314,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Navigate(ThisItem.value)",
+            "InvariantScript": "Navigate('admin Dashboard')",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -1655,12 +1655,12 @@
       "ZIndex",
       "CustomProperty1"
     ],
-    "LastModifiedTimestamp": "638229424765269173",
+    "LastModifiedTimestamp": "638229361304622314",
     "Name": "Component1",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table({SampleStringField: \"Dasboard\", menuscreenNavigate:Employee},\r\n{SampleStringField: \"Dasboard\", menuscreenNavigate:managerDashboard})",
+        "InvariantScript": "\"Text\"",
         "Property": "CustomProperty1",
         "RuleProviderType": "System"
       },
@@ -1731,7 +1731,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638229424765269173",
+  "LastModifiedTimestamp": "638229361304622314",
   "Name": "d4c67b3c1abc436cb22de7b24346dacb",
   "OverridableProperties": {},
   "Version": "638229260029421805"
