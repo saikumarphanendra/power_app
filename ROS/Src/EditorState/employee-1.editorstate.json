@@ -29,7 +29,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "address",
-      "ParentIndex": 1,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -113,7 +113,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Arrow2",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -245,7 +245,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BadgeCanvas1_1",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -366,7 +366,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2_5",
-      "ParentIndex": 18,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -652,7 +652,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button4_3",
-      "ParentIndex": 4,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -867,7 +867,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DropdownCanvas1",
-      "ParentIndex": 10,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1014,7 +1014,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "empid_1",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1259,7 +1259,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery1_4",
-      "ParentIndex": 17,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1466,7 +1466,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "gender",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1802,7 +1802,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon5_1",
-      "ParentIndex": 5,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1979,7 +1979,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon6_3",
-      "ParentIndex": 3,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2177,7 +2177,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image5_4",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2713,7 +2713,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextCanvas1",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2808,7 +2808,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextCanvas1_1",
-      "ParentIndex": 8,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2896,7 +2896,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextCanvas1_10",
-      "ParentIndex": 15,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2984,7 +2984,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextCanvas1_11",
-      "ParentIndex": 16,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3072,7 +3072,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextCanvas1_12",
-      "ParentIndex": 7,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
