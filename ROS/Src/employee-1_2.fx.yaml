@@ -31,7 +31,7 @@
         ZIndex: =4
 
     Form5 As form:
-        DataSource: ='Move Employee'
+        DataSource: ='Move Employee_2'
         Fill: =RGBA(153, 207, 236, 1)
         Height: =514
         NumberOfColumns: =2
@@ -45,10 +45,10 @@
             DataField: ="Title"
             Default: =ThisItem.Title
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"Title")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'Move Employee'], DataSourceInfo.MaxLength, "Title")
+            MaxLength: =DataSourceInfo([@'Move Employee_2'], DataSourceInfo.MaxLength, "Title")
             Required: =true
             Update: =DataCardValue20.Text
             Width: =558
@@ -113,7 +113,7 @@
             DataField: ="Date"
             Default: =ThisItem.Date
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"Date")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"Date")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -178,14 +178,14 @@
             DataField: ="LName"
             Default: =ThisItem.'Name (LName)'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"LName")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"LName")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue23.Selected
             Width: =558
-            X: =0
-            Y: =1
+            X: =1
+            Y: =0
             ZIndex: =6
 
             DataCardKey25 As label:
@@ -203,11 +203,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@'Move Employee'].LName)
+                Items: =Choices([@'Move Employee_2'].LName)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Move Employee_2'.LName,DataCardValue23.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -245,13 +244,13 @@
             DataField: ="Email"
             Default: =ThisItem.Email
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"Email")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"Email")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue24.Selected
             Width: =558
-            X: =1
+            X: =0
             Y: =1
             ZIndex: =6
 
@@ -270,11 +269,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@'Move Employee'].Email)
+                Items: =Choices([@'Move Employee_2'].Email)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Move Employee_2'.Email,DataCardValue24.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -312,14 +310,14 @@
             DataField: ="Phonenumber"
             Default: =ThisItem.'Phone number'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"Phonenumber")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"Phonenumber")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue25.Selected
             Width: =558
-            X: =0
-            Y: =2
+            X: =1
+            Y: =1
             ZIndex: =6
 
             DataCardKey27 As label:
@@ -337,11 +335,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@'Move Employee'].Phonenumber)
+                Items: =Choices([@'Move Employee_2'].Phonenumber)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Move Employee_2'.Phonenumber,DataCardValue25.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -379,14 +376,14 @@
             DataField: ="EmpId"
             Default: =ThisItem.EmpId
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"EmpId")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"EmpId")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue26.Selected
             Width: =558
-            X: =1
-            Y: =0
+            X: =0
+            Y: =2
             ZIndex: =6
 
             DataCardKey28 As label:
@@ -404,11 +401,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@'Move Employee'].EmpId)
+                Items: =Choices([@'Move Employee_2'].EmpId)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Move Employee_2'.EmpId,DataCardValue26.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -446,7 +442,7 @@
             DataField: ="RestaurantManager"
             Default: =ThisItem.'Restaurant Manager'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"RestaurantManager")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"RestaurantManager")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -471,11 +467,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@'Move Employee'].RestaurantManager)
+                Items: =Choices([@'Move Employee_2'].RestaurantManager)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Move Employee_2'.RestaurantManager,DataCardValue27.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -513,7 +508,7 @@
             DataField: ="RestaurantId"
             Default: =ThisItem.'Restaurant Id'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"RestaurantId")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"RestaurantId")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -538,11 +533,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@'Move Employee'].RestaurantId)
+                Items: =Choices([@'Move Employee_2'].RestaurantId)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Move Employee_2'.RestaurantId,DataCardValue28.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -580,7 +574,7 @@
             DataField: ="RestauirantName"
             Default: =ThisItem.'Restaurant Name'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee'],DataSourceInfo.DisplayName,"RestauirantName")
+            DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"RestauirantName")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -605,11 +599,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@'Move Employee'].RestauirantName)
+                Items: =Choices([@'Move Employee_2'].RestauirantName)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Move Employee_2'.RestauirantName,DataCardValue29.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -645,7 +638,8 @@
     Button1_1 As button:
         OnSelect: |+
             =SubmitForm(Form5);
-            Navigate('employee-1_3')
+            Navigate('employee-1_3');
+            
             
             
         Text: |-
