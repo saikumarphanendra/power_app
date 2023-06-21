@@ -139,13 +139,6 @@
         Y: =269
         ZIndex: =7
 
-    Component1_3 As admin:
-        Height: =620
-        Visible: =menu
-        Width: =172
-        Y: =92
-        ZIndex: =8
-
     Button3_12 As button:
         BorderColor: =RGBA(202,202,202,1)
         Color: =RGBA(219, 219, 219, 1)
@@ -337,4 +330,10 @@
         X: =1203
         Y: =380
         ZIndex: =30
+
+    Component2_4 As Component2:
+        Height: =676
+        Visible: =menu
+        Y: =92
+        ZIndex: =31
 

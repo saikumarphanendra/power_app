@@ -264,7 +264,8 @@
         Y: =382
         ZIndex: =23
 
-    Component1_1 As Component1:
+    Component2_2 As Component2:
+        Height: =676
         Visible: =menu
         Y: =92
         ZIndex: =24
