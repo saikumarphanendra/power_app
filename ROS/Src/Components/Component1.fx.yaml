@@ -1,5 +1,7 @@
 Component1 As CanvasComponent:
-    CustomProperty1: ="Text"
+    CustomProperty1: |-
+        =Table({SampleStringField: "Dasboard", menuscreenNavigate:Employee},
+        {SampleStringField: "Dasboard", menuscreenNavigate:managerDashboard})
     Fill: =RGBA(0, 94, 146, 1)
     Height: =640
     Width: =150
@@ -11,7 +13,7 @@ Component1 As CanvasComponent:
         Fill: =RGBA(102, 182, 227, 1)
         Font: =Font.'Lato Black'
         FontWeight: =FontWeight.Normal
-        OnSelect: =Navigate('admin Dashboard')
+        OnSelect: =Navigate(ThisItem.value)
         Size: =12
         Text: ="Dashboard"
         Width: =150

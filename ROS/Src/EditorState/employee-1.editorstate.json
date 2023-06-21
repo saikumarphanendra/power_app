@@ -113,7 +113,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Arrow2",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -245,7 +245,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BadgeCanvas1_1",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -477,7 +477,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button4_3",
-      "ParentIndex": 8,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1422,7 +1422,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon6_3",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1620,7 +1620,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image5_4",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2149,7 +2149,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextCanvas1",
-      "ParentIndex": 5,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2237,7 +2237,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextCanvas1_1",
-      "ParentIndex": 3,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2501,7 +2501,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextCanvas1_4",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

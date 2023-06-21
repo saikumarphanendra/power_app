@@ -198,3 +198,8 @@ managerDashboard As screen:
         Y: =9
         ZIndex: =26
 
+    Component2_1 As Component2:
+        Visible: =menu
+        Y: =92
+        ZIndex: =27
+
