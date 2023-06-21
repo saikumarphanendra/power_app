@@ -34,7 +34,7 @@
             "Name": "galleryTemplate2",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 273,
+            "PublishOrderIndex": 322,
             "Rules": [
               {
                 "Category": "Design",
@@ -107,7 +107,7 @@
             "Name": "Rectangle5",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 274,
+            "PublishOrderIndex": 323,
             "Rules": [
               {
                 "Category": "Design",
@@ -310,7 +310,7 @@
             "Name": "Button2",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 275,
+            "PublishOrderIndex": 324,
             "Rules": [
               {
                 "Category": "Data",
@@ -615,7 +615,7 @@
         "Name": "Gallery2",
         "Parent": "admin",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 272,
+        "PublishOrderIndex": 321,
         "Rules": [
           {
             "Category": "Data",

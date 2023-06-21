@@ -111,16 +111,9 @@
         Size: =30
         Text: =CountRows(Employees)
         Width: =101
-        X: =633
-        Y: =269
+        X: =656
+        Y: =270
         ZIndex: =7
-
-    Component1_1 As admin:
-        Height: =620
-        Visible: =menu
-        Width: =172
-        Y: =92
-        ZIndex: =8
 
     Button3_1 As button:
         BorderColor: =RGBA(202,202,202,1)
@@ -211,16 +204,18 @@
         Size: =20
         Text: =Concatenate("Hi, ",username1)
         Width: =313
-        X: =231
-        Y: =107
+        X: =236
+        Y: =96
         ZIndex: =18
 
     Icon6 As icon.Person:
+        Height: =42
         Icon: =Icon.Person
         OnSelect: |
             =Set(clicked,!clicked);
-        X: =1284
-        Y: =14
+        Width: =48
+        X: =1286
+        Y: =30
         ZIndex: =19
 
     Image5 As image:
@@ -268,4 +263,9 @@
         X: =906
         Y: =382
         ZIndex: =23
+
+    Component1_1 As Component1:
+        Visible: =menu
+        Y: =92
+        ZIndex: =24
 

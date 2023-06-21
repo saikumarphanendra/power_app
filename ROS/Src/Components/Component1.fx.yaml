@@ -1,0 +1,60 @@
+Component1 As CanvasComponent:
+    Fill: =RGBA(0, 94, 146, 1)
+    Height: =640
+    Width: =150
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Button5_4 As button:
+        Fill: =RGBA(102, 182, 227, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Normal
+        OnSelect: =Navigate('admin Dashboard')
+        Size: =12
+        Text: ="Dashboard"
+        Width: =150
+        Y: =17
+        ZIndex: =5
+
+    Button5_5 As button:
+        Fill: =RGBA(102, 182, 227, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Normal
+        OnSelect: =
+        Size: =12
+        Text: ="Managers"
+        Width: =150
+        Y: =69
+        ZIndex: =6
+
+    Button5_6 As button:
+        Fill: =RGBA(102, 182, 227, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Normal
+        Size: =12
+        Text: ="Branches"
+        Width: =150
+        Y: =121
+        ZIndex: =7
+
+    Button5_8 As button:
+        Fill: =RGBA(102, 182, 227, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Normal
+        Size: =12
+        Text: ="Employees"
+        Width: =150
+        Y: =173
+        ZIndex: =9
+
+    Button5_9 As button:
+        Fill: =RGBA(102, 182, 227, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Normal
+        Size: =12
+        Text: ="On Boarding request"
+        Width: =150
+        Y: =225
+        ZIndex: =10
+

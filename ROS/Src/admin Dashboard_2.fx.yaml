@@ -6,16 +6,6 @@
         Width: =1366
         ZIndex: =1
 
-    Rectangle3_3 As rectangle:
-        BorderColor: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =152
-        OnSelect: =Set(lists,Branches)
-        Width: =196
-        X: =230
-        Y: =161
-        ZIndex: =2
-
     Label5_9 As label:
         Align: =Align.Center
         Fill: =RGBA(219, 219, 219, 1)
@@ -24,29 +14,32 @@
         Size: =30
         Text: =CountRows(Branches)
         Width: =104
-        X: =276
-        Y: =279
+        X: =315
+        Y: =269
         ZIndex: =3
 
     Label7_9 As label:
         Align: =Align.Center
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
         Height: =76
-        Size: =20
+        Size: =25
         Text: ="Branches"
-        X: =253
-        Y: =182
+        X: =292
+        Y: =177
         ZIndex: =4
 
     "Gallery1_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(202, 202, 202, 1)
+        BorderThickness: =1
         DelayItemLoading: =true
         Height: =339
-        Items: =Branches
+        Items: ='Restaurant Manager_1'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(adminDashboardList)
         TemplatePadding: =0
-        TemplateSize: =104
+        TemplateSize: =82
         Width: =1136
         X: =230
         Y: =429
@@ -54,41 +47,25 @@
 
         Title1_3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =25
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =20
-            Text: =ThisItem.Title
+            Size: =16
+            Text: =ThisItem.'Manager Name'
             VerticalAlign: =VerticalAlign.Top
-            Width: =99
-            X: =476
-            Y: =34
+            Width: =167
+            X: =19
+            Y: =24
             ZIndex: =2
-
-        Subtitle1_3 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =55
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =25
-            Text: =ThisItem.Branchname
-            VerticalAlign: =VerticalAlign.Top
-            Width: =345
-            X: =35
-            Y: =27
-            ZIndex: =3
 
         Separator1_3 As rectangle:
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
-            Y: =96
+            Y: =74
             ZIndex: =5
 
         Rectangle4_3 As rectangle:
@@ -98,15 +75,56 @@
             Width: =4
             ZIndex: =6
 
+        Label22_1 As label:
+            Height: =41
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Address
+            Width: =112
+            X: =564
+            ZIndex: =8
+
+        Label23_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Gender.Value
+            Width: =72
+            X: =222
+            Y: =16
+            ZIndex: =9
+
+        Label24_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Phone Number'
+            Width: =246
+            X: =318
+            Y: =15
+            ZIndex: =10
+
+        Label25_1 As label:
+            Height: =39
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Restaurant Name'.Value
+            Width: =148
+            X: =773
+            Y: =16
+            ZIndex: =11
+
+        Label26_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Branch '.Value
+            X: =972
+            Y: =17
+            ZIndex: =12
+
     Label7_10 As label:
         Align: =Align.Center
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
         Height: =76
-        Size: =20
+        Size: =25
         Text: ="Employees"
         Width: =173
-        X: =544
-        Y: =182
+        X: =617
+        Y: =177
         ZIndex: =6
 
     Label5_10 As label:
@@ -117,8 +135,8 @@
         Size: =30
         Text: =CountRows(Employees)
         Width: =101
-        X: =580
-        Y: =279
+        X: =652
+        Y: =269
         ZIndex: =7
 
     Component1_3 As admin:
@@ -134,15 +152,15 @@
         Fill: =RGBA(0, 0, 0, 0)
         Height: =152
         HoverFill: =RGBA(202, 202, 202, 0.32)
-        OnSelect: =Set(lists,Employees)
+        OnSelect: =Navigate('admin Dashboard_1')
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: =""
-        Width: =195
-        X: =534
-        Y: =176
+        Width: =263
+        X: =575
+        Y: =168
         ZIndex: =9
 
     Button3_11 As button:
@@ -151,35 +169,35 @@
         Fill: =RGBA(0, 0, 0, 0)
         Height: =152
         HoverFill: =RGBA(209, 205, 205, 0.27)
-        OnSelect: =Set(lists,Branches)
+        OnSelect: =Navigate('admin Dashboard')
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: =
-        Width: =195
-        X: =231
-        Y: =176
+        Width: =263
+        X: =236
+        Y: =168
         ZIndex: =10
 
     Icon2_5 As icon.Hamburger:
-        Height: =44
         Icon: =Icon.Hamburger
         OnSelect: =If(menu=true,Set(menu,false),Set(menu,true))
-        Width: =54
-        X: =15
-        Y: =34
+        X: =40
+        Y: =14
         ZIndex: =11
 
     Label7_11 As label:
         Align: =Align.Center
+        Fill: =RGBA(255, 255, 255, 1)
         Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
         Height: =76
-        Size: =20
+        Size: =25
         Text: ="Managers"
         Width: =173
-        X: =836
-        Y: =182
+        X: =965
+        Y: =177
         ZIndex: =12
 
     Label5_11 As label:
@@ -188,10 +206,10 @@
         Font: =Font.'Lato Black'
         Height: =50
         Size: =30
-        Text: =CountRows('Restaurant Manager')
+        Text: =CountRows('Restaurant Manager_1')
         Width: =101
-        X: =883
-        Y: =279
+        X: =1001
+        Y: =270
         ZIndex: =13
 
     Button3_13 As button:
@@ -200,15 +218,14 @@
         Fill: =RGBA(0, 0, 0, 0)
         Height: =152
         HoverFill: =RGBA(201, 197, 197, 0.3)
-        OnSelect: =Set(lists,'Restaurant Manager')
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
         Text: =""
-        Width: =195
-        X: =836
-        Y: =177
+        Width: =263
+        X: =920
+        Y: =168
         ZIndex: =14
 
     Label10_3 As label:
@@ -217,16 +234,18 @@
         Size: =20
         Text: =Concatenate("Hi, ",username1)
         Width: =313
-        X: =231
-        Y: =107
+        X: =236
+        Y: =96
         ZIndex: =18
 
     Icon6_2 As icon.Person:
+        Height: =42
         Icon: =Icon.Person
         OnSelect: |
             =Set(clicked,!clicked);
-        X: =1284
-        Y: =14
+        Width: =48
+        X: =1288
+        Y: =30
         ZIndex: =19
 
     Image5_2 As image:
@@ -248,4 +267,74 @@
         X: =1206
         Y: =88
         ZIndex: =21
+
+    Label12_2 As label:
+        BorderColor: =RGBA(202, 202, 202, 1)
+        BorderThickness: =1
+        Color: =RGBA(0, 121, 187, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Courier New'
+        Height: =55
+        Size: =20
+        Text: ="Mng_Name"
+        Width: =1136
+        X: =230
+        Y: =374
+        ZIndex: =22
+
+    Label20_2 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        Font: =Font.'Courier New'
+        Height: =61
+        Size: =20
+        Text: ="Type_of_Emp"
+        Width: =276
+        X: =986
+        Y: =371
+        ZIndex: =23
+
+    Label28_2 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Courier New'
+        Height: =33
+        Size: =20
+        Text: ="Contact_num"
+        Width: =194
+        X: =549
+        Y: =389
+        ZIndex: =25
+
+    Label28_7 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Courier New'
+        Size: =20
+        Text: ="Gender"
+        Width: =114
+        X: =419
+        Y: =382
+        ZIndex: =28
+
+    Label28_8 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Courier New'
+        Size: =20
+        Text: ="Email"
+        X: =784
+        Y: =382
+        ZIndex: =29
+
+    Label28_9 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Courier New'
+        Height: =44
+        Size: =20
+        Text: ="Work_Base"
+        Width: =163
+        X: =1203
+        Y: =380
+        ZIndex: =30
 

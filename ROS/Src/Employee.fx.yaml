@@ -8,8 +8,7 @@ Employee As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =104
-        Width: =1324
-        X: =42
+        Width: =1366
         Y: =177
         ZIndex: =1
 
@@ -128,4 +127,18 @@ Employee As screen:
         Height: =92
         Width: =1366
         ZIndex: =2
+
+    Icon7 As icon.Person:
+        Icon: =Icon.Person
+        X: =1288
+        Y: =14
+        ZIndex: =3
+
+    Image5_3 As image:
+        Height: =74
+        Image: ='download-removebg-preview (8)'
+        Width: =116
+        X: =110
+        Y: =4
+        ZIndex: =4
 
