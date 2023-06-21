@@ -100,7 +100,7 @@
         "Name": "Button5_4",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 475,
+        "PublishOrderIndex": 7,
         "Rules": [
           {
             "Category": "Data",
@@ -431,7 +431,7 @@
         "Name": "Button5_5",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 476,
+        "PublishOrderIndex": 8,
         "Rules": [
           {
             "Category": "Data",
@@ -762,7 +762,7 @@
         "Name": "Button5_6",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 477,
+        "PublishOrderIndex": 9,
         "Rules": [
           {
             "Category": "Data",
@@ -1085,7 +1085,7 @@
         "Name": "Button5_8",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 478,
+        "PublishOrderIndex": 10,
         "Rules": [
           {
             "Category": "Data",
@@ -1402,7 +1402,7 @@
         "Name": "Button5_9",
         "Parent": "Component1",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 479,
+        "PublishOrderIndex": 11,
         "Rules": [
           {
             "Category": "Data",

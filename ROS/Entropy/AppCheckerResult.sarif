@@ -11418,36 +11418,6 @@
           },
           "ruleId": "app-NotOfflineConnectors",
           "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.ClickabuttoninPowerAppstosendanemail"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.ClickabuttoninPowerAppstosendanemail",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ClickabuttoninPowerAppstosendanemail",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-NotOfflineConnectors",
-          "ruleIndex": 12
         }
       ],
       "tool": {
