@@ -70,7 +70,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
-            Text: =ThisItem.Branchname
+            Text: =ThisItem.Location
             VerticalAlign: =VerticalAlign.Top
             Width: =205
             X: =16

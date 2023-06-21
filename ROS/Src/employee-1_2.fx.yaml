@@ -640,6 +640,7 @@
             =SubmitForm(Form5);
             Navigate('employee-1_3');
             ClickabuttoninPowerAppstosendanemail.Run("RajasriManasaBepeta@PratianTechnologies226.onmicrosoft.com","Move Employee Request","Manager has sent a request to Move You to other Restaurant");
+            Sendapprovalandfollowupviaemail.Run("Priyanka.M@PratianTechnologies226.onmicrosoft.com","RajasriManasaBepeta@PratianTechnologies226.onmicrosoft.com");
             
         Text: |-
             ="Proceed

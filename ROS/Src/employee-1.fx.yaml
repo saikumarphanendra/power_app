@@ -48,7 +48,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(153, 207, 236, 1)
         Height: =387
-        Items: =Employees
+        Items: =Search(Filter(Employees,IsBlank(BranchDropdown.SelectedItems.Value) || IsEmpty(BranchDropdown.SelectedItems)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =52
