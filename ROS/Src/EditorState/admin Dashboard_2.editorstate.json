@@ -1275,7 +1275,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Component1_3": {
+    "Component2_4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1287,10 +1287,25 @@
           "NameMapSourceSchema": "?"
         },
         "Height",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "640",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "X",
         "Y",
         "ZIndex",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Table({manulabel: \"Dashboard\",menuscreennavigate:'admin Dashboard',menuId:1})",
+          "InvariantPropertyName": "CustomProperty1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -1314,10 +1329,15 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "Component1_3",
+      "Name": "Component2_4",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "CustomProperty1",
+          "RuleProviderType": "System"
+        },
         {
           "Category": "Design",
           "PropertyName": "Fill",

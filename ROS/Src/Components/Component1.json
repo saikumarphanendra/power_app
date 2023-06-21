@@ -1655,7 +1655,7 @@
       "ZIndex",
       "CustomProperty1"
     ],
-    "LastModifiedTimestamp": "638229455267916216",
+    "LastModifiedTimestamp": "638229441013053407",
     "Name": "Component1",
     "Rules": [
       {
@@ -1731,7 +1731,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638229455267916216",
+  "LastModifiedTimestamp": "638229441013053407",
   "Name": "d4c67b3c1abc436cb22de7b24346dacb",
   "OverridableProperties": {},
   "Version": "638229260029421805"

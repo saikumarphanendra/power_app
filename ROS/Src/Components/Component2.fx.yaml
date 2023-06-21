@@ -38,16 +38,19 @@ Component2 As CanvasComponent:
             ZIndex: =2
 
         Rectangle3 As rectangle:
-            Height: =Parent.TemplateHeight 
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =57
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
-            Width: =4
+            Width: =12
             ZIndex: =6
 
         Button6 As button:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =57
+            HoverFill: =Color.Transparent
             OnSelect: =Navigate(ThisItem.menuscreennavigate)
+            PressedFill: =Color.Transparent
             Text: =""
             Width: =150
             ZIndex: =7
