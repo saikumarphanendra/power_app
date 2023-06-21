@@ -26,6 +26,9 @@
           "Login": {
             "tableName": "e362c4cb-ac4f-4f88-864f-76105dbf91fb"
           },
+          "Move Employee_1": {
+            "tableName": "39075802-9398-434e-8cdc-c82897ab4103"
+          },
           "Restaurant Manager_1": {
             "tableName": "8d6f31a4-5f8c-4b88-9bb6-680d4d617e4d"
           },
@@ -42,10 +45,109 @@
       "Admin login",
       "Employee login",
       "Restaurent login",
-      "Restaurant Manager_1"
+      "Restaurant Manager_1",
+      "Move Employee_1"
     ],
     "dependencies": {},
     "dependents": [],
     "id": "0984c18a-8015-4a43-8dca-24335bb2422e"
+  },
+  "27c19d1a-f23e-4107-9b0a-049e39de91f2": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "40d01496-a025-4774-bc2e-5bc0c6f749d1": {
+          "value": "shared_office365"
+        },
+        "a49301e6-8157-434c-bc0a-d96ac42134d1": {
+          "value": "shared_approvals"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "90126ac3-3860-43a6-a3a6-088ecc5d45db"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_approvals": {
+          "value": "a49301e6-8157-434c-bc0a-d96ac42134d1"
+        },
+        "shared_office365": {
+          "value": "40d01496-a025-4774-bc2e-5bc0c6f749d1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "90126ac3-3860-43a6-a3a6-088ecc5d45db"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Sendapprovalandfollowupviaemail"
+    ],
+    "dependencies": {
+      "shared_approvals": "a49301e6-8157-434c-bc0a-d96ac42134d1",
+      "shared_office365": "40d01496-a025-4774-bc2e-5bc0c6f749d1"
+    },
+    "dependents": [],
+    "id": "27c19d1a-f23e-4107-9b0a-049e39de91f2"
+  },
+  "40d01496-a025-4774-bc2e-5bc0c6f749d1": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/390724148/1.0.1641.3327/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "27c19d1a-f23e-4107-9b0a-049e39de91f2",
+      "a0e07009-6e51-4d4c-b6c8-a34d1d6c56aa"
+    ],
+    "id": "40d01496-a025-4774-bc2e-5bc0c6f749d1"
+  },
+  "a0e07009-6e51-4d4c-b6c8-a34d1d6c56aa": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "23aab996-b932-4465-8d20-2d91b7e5daf7"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "23aab996-b932-4465-8d20-2d91b7e5daf7"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ClickabuttoninPowerAppstosendanemail"
+    ],
+    "dependencies": {
+      "shared_office365": "40d01496-a025-4774-bc2e-5bc0c6f749d1"
+    },
+    "dependents": [],
+    "id": "a0e07009-6e51-4d4c-b6c8-a34d1d6c56aa"
+  },
+  "a49301e6-8157-434c-bc0a-d96ac42134d1": {
+    "connectionRef": {
+      "displayName": "Approvals",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1638/1.0.1638.3308/approvals/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_approvals"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "27c19d1a-f23e-4107-9b0a-049e39de91f2"
+    ],
+    "id": "a49301e6-8157-434c-bc0a-d96ac42134d1"
   }
 }
