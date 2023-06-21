@@ -34,7 +34,7 @@
             "Name": "galleryTemplate2",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 322,
+            "PublishOrderIndex": 3,
             "Rules": [
               {
                 "Category": "Design",
@@ -107,7 +107,7 @@
             "Name": "Rectangle5",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 323,
+            "PublishOrderIndex": 4,
             "Rules": [
               {
                 "Category": "Design",
@@ -310,7 +310,7 @@
             "Name": "Button2",
             "Parent": "Gallery2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 324,
+            "PublishOrderIndex": 5,
             "Rules": [
               {
                 "Category": "Data",
@@ -615,7 +615,7 @@
         "Name": "Gallery2",
         "Parent": "admin",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 321,
+        "PublishOrderIndex": 2,
         "Rules": [
           {
             "Category": "Data",
@@ -806,7 +806,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638229211055256735",
+    "LastModifiedTimestamp": "638229349956976938",
     "Name": "admin",
     "Rules": [
       {
@@ -865,7 +865,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638229211055256735",
+  "LastModifiedTimestamp": "638229349956976938",
   "Name": "0007d5660c51443ebd6a4767eef30df7",
   "OverridableProperties": {},
   "Version": "638228385536722147"
