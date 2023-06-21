@@ -330,10 +330,9 @@
         Y: =380
         ZIndex: =30
 
-    admin_1 As admin:
-        Height: =622
+    Component2_3 As Component2:
+        Height: =680
         Visible: =menu
-        Width: =172
         Y: =92
-        ZIndex: =32
+        ZIndex: =31
 
