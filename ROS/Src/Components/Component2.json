@@ -69,7 +69,14 @@
             "AllowAccessToGlobals": true,
             "Children": [],
             "ControlPropertyState": [
-              "Fill",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Fill",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisabledFill",
               "PressedFill",
               "HoverFill",
@@ -104,7 +111,7 @@
             "Rules": [
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(0, 18, 107, 1)",
+                "InvariantScript": "RGBA(255, 255, 255, 1)",
                 "Property": "Fill",
                 "RuleProviderType": "Unknown"
               },
@@ -164,13 +171,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "4",
+                "InvariantScript": "12",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Parent.TemplateHeight ",
+                "InvariantScript": "57",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -1103,7 +1110,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638229464856550006",
+    "LastModifiedTimestamp": "638229465659632191",
     "Name": "Component2",
     "Rules": [
       {
@@ -1178,7 +1185,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638229464856550006",
+  "LastModifiedTimestamp": "638229465659632191",
   "Name": "1f79a0ea594641bd9dc34649e40210d2",
   "OverridableProperties": {},
   "Version": "638229404114730861"
