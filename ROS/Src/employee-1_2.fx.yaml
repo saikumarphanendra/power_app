@@ -207,7 +207,7 @@
                 Items: =Choices([@'Move Employee_1'].LName)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_1'.LName,DataCardValue23.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -274,7 +274,7 @@
                 Items: =Choices([@'Move Employee_1'].Email)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_1'.Email,DataCardValue24.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -341,7 +341,7 @@
                 Items: =Choices([@'Move Employee_1'].Phonenumber)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_1'.Phonenumber,DataCardValue25.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -408,7 +408,7 @@
                 Items: =Choices([@'Move Employee_1'].EmpId)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_1'.EmpId,DataCardValue26.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -475,7 +475,7 @@
                 Items: =Choices([@'Move Employee_1'].RestaurantManager)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_1'.RestaurantManager,DataCardValue27.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -542,7 +542,7 @@
                 Items: =Choices([@'Move Employee_1'].RestaurantId)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_1'.RestaurantId,DataCardValue28.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -609,7 +609,7 @@
                 Items: =Choices([@'Move Employee_1'].RestauirantName)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_1'.RestauirantName,DataCardValue29.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
