@@ -48,7 +48,8 @@ Component2 As CanvasComponent:
         Button6 As button:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =57
-            HoverFill: =Color.Transparent
+            HoverColor: =RGBA(128, 128, 128, 1)
+            HoverFill: =RGBA(204, 231, 246, 1)
             OnSelect: =Navigate(ThisItem.menuscreennavigate)
             PressedFill: =Color.Transparent
             Text: =""
