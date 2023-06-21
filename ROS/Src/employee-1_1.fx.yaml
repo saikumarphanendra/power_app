@@ -1,0 +1,8 @@
+"'employee-1_1' As screen":
+
+    Arrow2_1 As arrow.backArrow:
+        BorderColor: =RGBA(0, 94, 146, 1)
+        X: =15
+        Y: =25
+        ZIndex: =22
+
