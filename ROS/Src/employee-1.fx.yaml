@@ -54,13 +54,16 @@
         ZIndex: =36
 
     Button5 As button:
+        Height: =32
         OnSelect: =NewForm(Form2_1);Navigate('employee-1_1')
         Text: ="Add User"
-        X: =1150
+        Width: =148
+        X: =1162
         Y: =124
         ZIndex: =37
 
     BranchDropdown As Dropdown.pcfdataset:
+        DefaultSelectedItems: =Branches
         DisplayMode: =DisplayMode.Edit
         Height: =32
         Items: |
@@ -218,6 +221,7 @@
                 ZIndex: =14
 
             DropdownCanvas1 As Dropdown.pcfdataset:
+                DefaultSelectedItems: =ThisItem.TypeOfEmployee
                 DisplayMode: =DisplayMode.Edit
                 Height: =34
                 Items: |
@@ -253,7 +257,7 @@
             DisplayMode: =DisplayMode.Edit
             Height: =32
             Text: ="LName"
-            Weight: ='TextCanvas.Weight'.Bold
+            Weight: ='TextCanvas.Weight'.Regular
             Width: =101
             X: =188
             Y: =205
@@ -265,7 +269,7 @@
             DisplayMode: =DisplayMode.Edit
             Height: =32
             Text: ="FName"
-            Weight: ='TextCanvas.Weight'.Bold
+            Weight: ='TextCanvas.Weight'.Regular
             Width: =101
             X: =74
             Y: =205

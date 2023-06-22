@@ -26,6 +26,7 @@
 
     Arrow2_3 As arrow.backArrow:
         BorderColor: =RGBA(0, 94, 146, 1)
+        OnSelect: =Navigate('employee-1')
         X: =15
         Y: =25
         ZIndex: =4
@@ -172,7 +173,15 @@
         Size: =20
         Text: ="Approve/Reject Move Employee Details"
         Width: =578
-        X: =418
-        Y: =135
+        X: =378
+        Y: =128
         ZIndex: =24
+
+    Button7 As button:
+        OnSelect: =ClickabuttoninPowerAppstosendanemail.Run("Priyanka.M@PratianTechnologies226.onmicrosoft.com","Move Employee Request","Check the Update");
+        Text: ="Notify Employee"
+        Width: =198
+        X: =1149
+        Y: =162
+        ZIndex: =25
 
