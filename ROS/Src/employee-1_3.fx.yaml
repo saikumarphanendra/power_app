@@ -30,811 +30,149 @@
         Y: =25
         ZIndex: =4
 
-    BadgeCanvas2 As Badge:
-        Content: =
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
-        Height: =66
-        Shape: ='BadgeCanvas.Shape'.Square
-        Width: =1264
-        X: =65
-        Y: =170
-        ZIndex: =5
-
-    TextCanvas2 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Size: =20
-        Text: ="Status"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =96
-        X: =1217
-        Y: =189
-        ZIndex: =6
-
-    TextCanvas2_1 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Size: =20
-        Text: ="Name"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =96
-        X: =221
-        Y: =187
-        ZIndex: =7
-
-    TextCanvas2_2 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Size: =20
-        Text: ="EmpId"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =96
-        X: =83
-        Y: =187
-        ZIndex: =8
-
-    TextCanvas2_4 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Size: =20
-        Text: ="Branch"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =96
-        X: =778
-        Y: =183
-        ZIndex: =10
-
-    TextCanvas2_6 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =60
-        Size: =20
-        Text: ="Restaurant Manager"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =102
-        X: =335
-        Y: =172
-        ZIndex: =12
-
-    TextCanvas2_7 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Size: =20
-        Text: ="RestaurantId"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =122
-        X: =456
-        Y: =179
-        ZIndex: =13
-
-    Label3_1 As label:
-        FontWeight: =FontWeight.Bold
-        Size: =16
-        Text: ="Date of Request"
-        Width: =105
-        X: =915
-        Y: =185
-        ZIndex: =15
-
-    TextCanvas2_8 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =53
-        Size: =20
-        Text: ="Restaurant Name"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =134
-        X: =622
-        Y: =176
-        ZIndex: =17
-
-    Label3_2 As label:
-        FontWeight: =FontWeight.Bold
-        Size: =16
-        Text: ="Date of A/R"
-        Width: =105
-        X: =1065
-        Y: =185
-        ZIndex: =18
-
-    Gallery7 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =309
-        Items: ='Move Employee Form'
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =68
-        Width: =432
-        X: =915
-        Y: =256
-        ZIndex: =19
-
-        "TextInputCanvas1_9 As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =30
-            Value: =ThisItem.Status
-            Width: =90
-            X: =302
-            Y: =3
-            ZIndex: =3
-
-        "DatePickerCanvas2 As 'Date picker'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =30
-            Width: =116
-            X: =0
-            Y: =3
-            ZIndex: =4
-
-        "DatePickerCanvas2_2 As 'Date picker'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =30
-            Width: =116
-            X: =151
-            Y: =3
-            ZIndex: =5
-
-    Gallery8 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =162
+        Fill: =RGBA(153, 207, 236, 1)
+        Height: =546
         Items: ='Move Employee_2'
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =76
-        Width: =831
-        X: =62
-        Y: =232
-        ZIndex: =21
-
-        DropdownCanvas2 As Dropdown.pcfdataset:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: ='Move Employee_2'
-            Width: =92
-            X: =19
-            Y: =24
-            ZIndex: =7
-
-            Title4 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Title"
-                FieldName: ="Title"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =8
-
-            Status1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Status"
-                FieldName: ="Status"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =2
-                ZIndex: =9
-
-            Date1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Date"
-                FieldName: ="Date"
-                FieldType: ="D"
-                FieldVariantName: ="textualColumn"
-                Order: =3
-                ZIndex: =10
-
-            Name1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Name"
-                FieldName: ="LName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =4
-                ZIndex: =11
-
-            Email1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Email"
-                FieldName: ="Email"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =5
-                ZIndex: =12
-
-            "'Phone number1' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Phone number"
-                FieldName: ="Phonenumber"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =6
-                ZIndex: =13
-
-            EmpId1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="EmpId"
-                FieldName: ="EmpId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =7
-                ZIndex: =14
-
-            "'Restaurant Manager1' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Manager"
-                FieldName: ="RestaurantManager"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =8
-                ZIndex: =15
-
-            "'Restaurant Id1' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Id"
-                FieldName: ="RestaurantId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =9
-                ZIndex: =16
-
-            "'Restaurant Name1' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Name"
-                FieldName: ="RestauirantName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =10
-                ZIndex: =17
-
-            Attachments1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Attachments"
-                FieldName: ="{Attachments}"
-                FieldType: ="r*"
-                FieldVariantName: ="textualColumn"
-                Order: =11
-                ZIndex: =18
-
-        DropdownCanvas2_1 As Dropdown.pcfdataset:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: ='Move Employee_2'
-            Width: =116
-            X: =137
-            Y: =24
-            ZIndex: =8
-
-            Title4_1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Title"
-                FieldName: ="Title"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =8
-
-            Status1_1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Status"
-                FieldName: ="Status"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =2
-                ZIndex: =9
-
-            Date1_1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Date"
-                FieldName: ="Date"
-                FieldType: ="D"
-                FieldVariantName: ="textualColumn"
-                Order: =3
-                ZIndex: =10
-
-            Name1_1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Name"
-                FieldName: ="LName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =4
-                ZIndex: =11
-
-            Email1_1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Email"
-                FieldName: ="Email"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =5
-                ZIndex: =12
-
-            "'Phone number1_1' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Phone number"
-                FieldName: ="Phonenumber"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =6
-                ZIndex: =13
-
-            EmpId1_1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="EmpId"
-                FieldName: ="EmpId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =7
-                ZIndex: =14
-
-            "'Restaurant Manager1_1' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Manager"
-                FieldName: ="RestaurantManager"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =8
-                ZIndex: =15
-
-            "'Restaurant Id1_1' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Id"
-                FieldName: ="RestaurantId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =9
-                ZIndex: =16
-
-            "'Restaurant Name1_1' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Name"
-                FieldName: ="RestauirantName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =10
-                ZIndex: =17
-
-            Attachments1_1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Attachments"
-                FieldName: ="{Attachments}"
-                FieldType: ="r*"
-                FieldVariantName: ="textualColumn"
-                Order: =11
-                ZIndex: =18
-
-        DropdownCanvas2_3 As Dropdown.pcfdataset:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: ='Move Employee_2'
-            Width: =114
-            X: =269
-            Y: =24
-            ZIndex: =9
-
-            Title4_3 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Title"
-                FieldName: ="Title"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =8
-
-            Status1_3 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Status"
-                FieldName: ="Status"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =2
-                ZIndex: =9
-
-            Date1_3 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Date"
-                FieldName: ="Date"
-                FieldType: ="D"
-                FieldVariantName: ="textualColumn"
-                Order: =3
-                ZIndex: =10
-
-            Name1_3 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Name"
-                FieldName: ="LName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =4
-                ZIndex: =11
-
-            Email1_3 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Email"
-                FieldName: ="Email"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =5
-                ZIndex: =12
-
-            "'Phone number1_3' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Phone number"
-                FieldName: ="Phonenumber"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =6
-                ZIndex: =13
-
-            EmpId1_3 As pcfDataField.textualColumn:
-                FieldDisplayName: ="EmpId"
-                FieldName: ="EmpId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =7
-                ZIndex: =14
-
-            "'Restaurant Manager1_3' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Manager"
-                FieldName: ="RestaurantManager"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =8
-                ZIndex: =15
-
-            "'Restaurant Id1_3' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Id"
-                FieldName: ="RestaurantId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =9
-                ZIndex: =16
-
-            "'Restaurant Name1_3' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Name"
-                FieldName: ="RestauirantName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =10
-                ZIndex: =17
-
-            Attachments1_3 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Attachments"
-                FieldName: ="{Attachments}"
-                FieldType: ="r*"
-                FieldVariantName: ="textualColumn"
-                Order: =11
-                ZIndex: =18
-
-        DropdownCanvas2_4 As Dropdown.pcfdataset:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: ='Move Employee_2'
-            Width: =98
-            X: =408
-            Y: =24
-            ZIndex: =10
-
-            Title4_4 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Title"
-                FieldName: ="Title"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =8
-
-            Status1_4 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Status"
-                FieldName: ="Status"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =2
-                ZIndex: =9
-
-            Date1_4 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Date"
-                FieldName: ="Date"
-                FieldType: ="D"
-                FieldVariantName: ="textualColumn"
-                Order: =3
-                ZIndex: =10
-
-            Name1_4 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Name"
-                FieldName: ="LName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =4
-                ZIndex: =11
-
-            Email1_4 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Email"
-                FieldName: ="Email"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =5
-                ZIndex: =12
-
-            "'Phone number1_4' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Phone number"
-                FieldName: ="Phonenumber"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =6
-                ZIndex: =13
-
-            EmpId1_4 As pcfDataField.textualColumn:
-                FieldDisplayName: ="EmpId"
-                FieldName: ="EmpId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =7
-                ZIndex: =14
-
-            "'Restaurant Manager1_4' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Manager"
-                FieldName: ="RestaurantManager"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =8
-                ZIndex: =15
-
-            "'Restaurant Id1_4' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Id"
-                FieldName: ="RestaurantId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =9
-                ZIndex: =16
-
-            "'Restaurant Name1_4' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Name"
-                FieldName: ="RestauirantName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =10
-                ZIndex: =17
-
-            Attachments1_4 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Attachments"
-                FieldName: ="{Attachments}"
-                FieldType: ="r*"
-                FieldVariantName: ="textualColumn"
-                Order: =11
-                ZIndex: =18
-
-        DropdownCanvas2_5 As Dropdown.pcfdataset:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: ='Move Employee_2'
-            Width: =120
-            X: =537
-            Y: =24
-            ZIndex: =11
-
-            Title4_5 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Title"
-                FieldName: ="Title"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =8
-
-            Status1_5 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Status"
-                FieldName: ="Status"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =2
-                ZIndex: =9
-
-            Date1_5 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Date"
-                FieldName: ="Date"
-                FieldType: ="D"
-                FieldVariantName: ="textualColumn"
-                Order: =3
-                ZIndex: =10
-
-            Name1_5 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Name"
-                FieldName: ="LName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =4
-                ZIndex: =11
-
-            Email1_5 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Email"
-                FieldName: ="Email"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =5
-                ZIndex: =12
-
-            "'Phone number1_5' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Phone number"
-                FieldName: ="Phonenumber"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =6
-                ZIndex: =13
-
-            EmpId1_5 As pcfDataField.textualColumn:
-                FieldDisplayName: ="EmpId"
-                FieldName: ="EmpId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =7
-                ZIndex: =14
-
-            "'Restaurant Manager1_5' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Manager"
-                FieldName: ="RestaurantManager"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =8
-                ZIndex: =15
-
-            "'Restaurant Id1_5' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Id"
-                FieldName: ="RestaurantId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =9
-                ZIndex: =16
-
-            "'Restaurant Name1_5' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Name"
-                FieldName: ="RestauirantName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =10
-                ZIndex: =17
-
-            Attachments1_5 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Attachments"
-                FieldName: ="{Attachments}"
-                FieldType: ="r*"
-                FieldVariantName: ="textualColumn"
-                Order: =11
-                ZIndex: =18
-
-        DropdownCanvas2_7 As Dropdown.pcfdataset:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: ='Move Employee_2'
-            Width: =112
-            X: =692
-            Y: =24
-            ZIndex: =12
-
-            Title4_7 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Title"
-                FieldName: ="Title"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =8
-
-            Status1_7 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Status"
-                FieldName: ="Status"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =2
-                ZIndex: =9
-
-            Date1_7 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Date"
-                FieldName: ="Date"
-                FieldType: ="D"
-                FieldVariantName: ="textualColumn"
-                Order: =3
-                ZIndex: =10
-
-            Name1_7 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Name"
-                FieldName: ="LName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =4
-                ZIndex: =11
-
-            Email1_7 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Email"
-                FieldName: ="Email"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =5
-                ZIndex: =12
-
-            "'Phone number1_7' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Phone number"
-                FieldName: ="Phonenumber"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =6
-                ZIndex: =13
-
-            EmpId1_7 As pcfDataField.textualColumn:
-                FieldDisplayName: ="EmpId"
-                FieldName: ="EmpId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =7
-                ZIndex: =14
-
-            "'Restaurant Manager1_7' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Manager"
-                FieldName: ="RestaurantManager"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =8
-                ZIndex: =15
-
-            "'Restaurant Id1_7' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Id"
-                FieldName: ="RestaurantId"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =9
-                ZIndex: =16
-
-            "'Restaurant Name1_7' As pcfDataField.textualColumn":
-                FieldDisplayName: ="Restaurant Name"
-                FieldName: ="RestauirantName"
-                FieldType: ="E"
-                FieldVariantName: ="textualColumn"
-                Order: =10
-                ZIndex: =17
-
-            Attachments1_7 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Attachments"
-                FieldName: ="{Attachments}"
-                FieldType: ="r*"
-                FieldVariantName: ="textualColumn"
-                Order: =11
-                ZIndex: =18
-
-    "Gallery10 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
-        Height: =227
-        Items: ='Move Employee_2'
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =104
-        X: =66
-        Y: =423
+        Width: =870
+        X: =0
+        Y: =218
         ZIndex: =22
 
-        Title6 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 173
-            X: =103
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle3.Size * 1.8)) / 2
-            ZIndex: =2
+        Email_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Email"
+            FieldName: ="Email"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Email.Value
+            Width: =234
+            X: =185
+            Y: =0
+            ZIndex: =23
 
-        Subtitle3 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Status.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title6.Width
-            X: =Title6.X
-            Y: =Title6.Y + Title6.Height
-            ZIndex: =3
+        EmpId_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="EmpId"
+            FieldName: ="EmpId"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.EmpId.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =25
 
-        NextArrow2 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Color: =RGBA(166, 166, 166, 1)
-            Height: =50
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            Tooltip: ="View item details"
-            Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
+        "'Restaurant Manager_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Restaurant Manager"
+            FieldName: ="RestaurantManager"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.'Restaurant Manager'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =26
 
-        Separator2 As rectangle:
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =96
-            ZIndex: =5
+        "'Restaurant Id_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Restaurant Id"
+            FieldName: ="RestaurantId"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.'Restaurant Id'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =27
 
-        Rectangle8 As rectangle:
-            Height: =Parent.TemplateHeight - Separator2.Height
-            OnSelect: =Select(Parent)
-            Visible: =If(ThisItem.IsSelected, true, false)
-            Width: =4
-            ZIndex: =6
+        "'Restaurant Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Restaurant Name"
+            FieldName: ="RestauirantName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.'Restaurant Name'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =28
+
+    DataTable2 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(153, 207, 236, 1)
+        Height: =546
+        Items: ='Move Employee Form'
+        Width: =494
+        X: =872
+        Y: =218
+        ZIndex: =23
+
+        "'Date of A/R_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date of A/R"
+            FieldName: ="DateofA_x002f_R"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.'Date of A/R'
+            Width: =214
+            X: =0
+            Y: =0
+            ZIndex: =36
+
+        Status_Column2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Status"
+            FieldName: ="Status"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.Status
+            Width: =100
+            X: =218
+            Y: =0
+            ZIndex: =37
+
+        "'Date of Request_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date of Request"
+            FieldName: ="DateofRequest"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.'Date of Request'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =38
+
+    Label21 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =54
+        Size: =20
+        Text: ="Approve/Reject Move Employee Details"
+        Width: =578
+        X: =418
+        Y: =135
+        ZIndex: =24
 
