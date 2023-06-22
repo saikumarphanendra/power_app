@@ -44,174 +44,196 @@
         Y: =25
         ZIndex: =22
 
-    Gallery1_4 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Fill: =RGBA(153, 207, 236, 1)
-        Height: =387
-        Items: |
-            =Employees
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =52
-        Width: =1281
-        X: =35
-        Y: =263
-        ZIndex: =24
+    Button2_5 As button:
+        Height: =36
+        OnSelect: =NewForm(Form5);Navigate('employee-1_2')
+        Text: ="Move Employee"
+        Width: =192
+        X: =1124
+        Y: =680
+        ZIndex: =36
 
-        "FName As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Mode: ='TextInputCanvas.Mode'.SingleLine
-            Value: =ThisItem.Title
-            Width: =102
-            X: =0
-            Y: =6
-            ZIndex: =1
+    Button5 As button:
+        OnSelect: =NewForm(Form2_1);Navigate('employee-1_1')
+        Text: ="Add User"
+        X: =1150
+        Y: =124
+        ZIndex: =37
 
-        "LName As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =30
-            Mode: ='TextInputCanvas.Mode'.SingleLine
-            Value: =ThisItem.LastName
-            Width: =88
-            X: =124
-            Y: =4
-            ZIndex: =2
-
-        "number As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Mode: ='TextInputCanvas.Mode'.SingleLine
-            Value: =ThisItem.PhoneNumber
-            Width: =116
-            X: =227
-            Y: =2
-            ZIndex: =3
-
-        "empid As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =30
-            Mode: ='TextInputCanvas.Mode'.SingleLine
-            Value: =ThisItem.EmpId
-            Width: =82
-            X: =1013
-            Y: =0
-            ZIndex: =4
-
-        "address As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Mode: ='TextInputCanvas.Mode'.SingleLine
-            Value: =ThisItem.Address
-            Width: =106
-            X: =894
-            Y: =2
-            ZIndex: =5
-
-        gender As Dropdown.pcfdataset:
-            DefaultSelectedItems: =ThisItem.Gender
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: |
-                =Choices(Employees.Gender)
-            Width: =94
-            X: =355
-            Y: =2
-            ZIndex: =6
-
-            Value1 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Value"
-                FieldName: ="Value"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =12
-
-        TypeofEmploymnt As Dropdown.pcfdataset:
-            DefaultSelectedItems: =ThisItem.TypeOfEmployment
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: =Choices(Employees.TypeOfEmployment)
-            Width: =116
-            X: =761
-            Y: =0
-            ZIndex: =8
-
-            Value3 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Value"
-                FieldName: ="Value"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =14
-
-        "mail As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =36
-            Mode: ='TextInputCanvas.Mode'.SingleLine
-            Value: =ThisItem.email
-            Width: =140
-            X: =460
-            Y: =0
-            ZIndex: =11
-
-        Icon4_1 As icon.NextArrow:
-            Height: =34
-            Icon: =Icon.NextArrow
-            OnSelect: =EditForm(Form2_1); Navigate('employee-1_1')
-            Tooltip: ="Edit Form"
-            Width: =22
-            X: =1212
-            Y: =10
-            ZIndex: =13
-
-        "empid_1 As 'Text input'":
-            DisplayMode: =DisplayMode.Edit
-            Height: =30
-            Mode: ='TextInputCanvas.Mode'.SingleLine
-            Value: =ThisItem.Branch
-            Width: =82
-            X: =1108
-            Y: =6
-            ZIndex: =14
-
-        DropdownCanvas1 As Dropdown.pcfdataset:
-            DisplayMode: =DisplayMode.Edit
-            Height: =32
-            Items: |
-                =Choices(Employees.TypeOfEmployee)
-            Width: =128
-            X: =617
-            Y: =0
-            ZIndex: =15
-
-            Value2 As pcfDataField.textualColumn:
-                FieldDisplayName: ="Value"
-                FieldName: ="Value"
-                FieldType: ="s"
-                FieldVariantName: ="textualColumn"
-                Order: =1
-                ZIndex: =18
-
-    TextCanvas1_12 As Text:
-        Alignment: ='TextCanvas.Alignment'.Start
-        As: ='TextCanvas.As'.Span
+    BranchDropdown As Dropdown.pcfdataset:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        Text: |
-            ="Branch"
-        Weight: ='TextCanvas.Weight'.Regular
-        Width: =101
-        X: =1150
-        Y: =202
-        ZIndex: =35
+        Items: |
+            =Branches
+        OnChange: =false
+        Width: =320
+        X: =782
+        Y: =124
+        ZIndex: =38
+
+        Location2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Location"
+            FieldName: ="Branchname"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =17
 
     Group8 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =35
+        ZIndex: =39
+
+        Gallery1_4 As gallery.galleryVertical:
+            DelayItemLoading: =true
+            Fill: =RGBA(153, 207, 236, 1)
+            Height: =387
+            Items: |
+                =Employees
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =52
+            Width: =1281
+            X: =42
+            Y: =245
+            ZIndex: =24
+
+            "FName As 'Text input'":
+                DisplayMode: =DisplayMode.Edit
+                Height: =34
+                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Value: =ThisItem.Title
+                Width: =86
+                X: =0
+                Y: =18
+                ZIndex: =1
+
+            "LName As 'Text input'":
+                DisplayMode: =DisplayMode.Edit
+                Height: =34
+                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Value: =ThisItem.LastName
+                Width: =86
+                X: =98
+                Y: =18
+                ZIndex: =2
+
+            "number As 'Text input'":
+                DisplayMode: =DisplayMode.Edit
+                Height: =34
+                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Value: =ThisItem.PhoneNumber
+                Width: =110
+                X: =195
+                Y: =18
+                ZIndex: =3
+
+            "empid As 'Text input'":
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Value: =ThisItem.EmpId
+                Width: =82
+                X: =1014
+                Y: =22
+                ZIndex: =4
+
+            "address As 'Text input'":
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Value: =ThisItem.Address
+                Width: =106
+                X: =892
+                Y: =20
+                ZIndex: =5
+
+            gender As Dropdown.pcfdataset:
+                DefaultSelectedItems: =ThisItem.Gender
+                DisplayMode: =DisplayMode.Edit
+                Height: =34
+                Items: |
+                    =Choices(Employees.Gender)
+                Width: =90
+                X: =319
+                Y: =18
+                ZIndex: =6
+
+                Value1 As pcfDataField.textualColumn:
+                    FieldDisplayName: ="Value"
+                    FieldName: ="Value"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =1
+                    ZIndex: =12
+
+            TypeofEmploymnt As Dropdown.pcfdataset:
+                DefaultSelectedItems: =ThisItem.TypeOfEmployment
+                DisplayMode: =DisplayMode.Edit
+                Height: =32
+                Items: =Choices(Employees.TypeOfEmployment)
+                Width: =116
+                X: =760
+                Y: =20
+                ZIndex: =8
+
+                Value3 As pcfDataField.textualColumn:
+                    FieldDisplayName: ="Value"
+                    FieldName: ="Value"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =1
+                    ZIndex: =14
+
+            "mail As 'Text input'":
+                DisplayMode: =DisplayMode.Edit
+                Height: =34
+                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Value: =ThisItem.email
+                Width: =200
+                X: =423
+                Y: =18
+                ZIndex: =11
+
+            Icon4_1 As icon.NextArrow:
+                Height: =34
+                Icon: =Icon.NextArrow
+                OnSelect: =EditForm(Form2_1); Navigate('employee-1_1')
+                Tooltip: ="Edit Form"
+                Width: =22
+                X: =1212
+                Y: =10
+                ZIndex: =13
+
+            "empid_1 As 'Text input'":
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Mode: ='TextInputCanvas.Mode'.SingleLine
+                Value: =ThisItem.Branch
+                Width: =82
+                X: =1112
+                Y: =20
+                ZIndex: =14
+
+            DropdownCanvas1 As Dropdown.pcfdataset:
+                DisplayMode: =DisplayMode.Edit
+                Height: =34
+                Items: |
+                    =Choices(Employees.TypeOfEmployee)
+                Width: =110
+                X: =640
+                Y: =18
+                ZIndex: =15
+
+                Value2 As pcfDataField.textualColumn:
+                    FieldDisplayName: ="Value"
+                    FieldName: ="Value"
+                    FieldType: ="s"
+                    FieldVariantName: ="textualColumn"
+                    Order: =1
+                    ZIndex: =18
 
         BadgeCanvas1_1 As Badge:
             Appearance: ='BadgeCanvas.Appearance'.Tint
@@ -333,38 +355,16 @@
             Y: =205
             ZIndex: =34
 
-    Button2_5 As button:
-        Height: =36
-        OnSelect: =NewForm(Form5);Navigate('employee-1_2')
-        Text: ="Move Employee"
-        Width: =192
-        X: =1124
-        Y: =680
-        ZIndex: =36
-
-    Button5 As button:
-        OnSelect: =NewForm(Form2_1);Navigate('employee-1_1')
-        Text: ="Add User"
-        X: =1150
-        Y: =124
-        ZIndex: =37
-
-    BranchDropdown As Dropdown.pcfdataset:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Items: |
-            =Branches
-        OnChange: =false
-        Width: =320
-        X: =782
-        Y: =124
-        ZIndex: =38
-
-        Location2 As pcfDataField.textualColumn:
-            FieldDisplayName: ="Location"
-            FieldName: ="Branchname"
-            FieldType: ="s"
-            FieldVariantName: ="textualColumn"
-            Order: =2
-            ZIndex: =17
+        TextCanvas1_12 As Text:
+            Alignment: ='TextCanvas.Alignment'.Start
+            As: ='TextCanvas.As'.Span
+            DisplayMode: =DisplayMode.Edit
+            Height: =32
+            Text: |
+                ="Branch"
+            Weight: ='TextCanvas.Weight'.Regular
+            Width: =101
+            X: =1150
+            Y: =202
+            ZIndex: =35
 
