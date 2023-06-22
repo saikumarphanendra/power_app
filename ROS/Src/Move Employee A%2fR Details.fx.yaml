@@ -184,7 +184,7 @@
         OnSelect: =ClickabuttoninPowerAppstosendanemail.Run("Priyanka.M@PratianTechnologies226.onmicrosoft.com","Move Employee Request","Check the Update ");
         Text: ="Notify Employee"
         Width: =198
-        X: =1149
-        Y: =142
+        X: =1130
+        Y: =135
         ZIndex: =25
 
