@@ -55,7 +55,9 @@
 
     Button5 As button:
         Height: =32
-        OnSelect: =NewForm(Form2_1);Navigate('Add/edit Employee')
+        OnSelect: |
+            =NewForm(Form2_1);Navigate('Add/edit Employee');
+            Set(addUser,"New Form");
         Text: ="Add User"
         Width: =148
         X: =1162
@@ -111,7 +113,7 @@
             TemplateSize: =52
             Width: =1281
             X: =42
-            Y: =245
+            Y: =247
             ZIndex: =24
 
             "FName As 'Text input'":
@@ -214,7 +216,9 @@
             Icon4_1 As icon.NextArrow:
                 Height: =34
                 Icon: =Icon.NextArrow
-                OnSelect: =EditForm(Form2_1); Navigate('Add/edit Employee')
+                OnSelect: |-
+                    =EditForm(Form2_1); Navigate('Add/edit Employee');
+                    Set(addUser,"Edit Form");
                 Tooltip: ="Edit Form"
                 Width: =22
                 X: =1212

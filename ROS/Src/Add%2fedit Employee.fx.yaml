@@ -42,8 +42,8 @@
         Item: =Gallery1_4.Selected
         NumberOfColumns: =2
         Width: =1314
-        X: =30
-        Y: =188
+        X: =33
+        Y: =186
         ZIndex: =5
 
         Title_DataCard2_1 As typedDataCard.textualEditCard:
@@ -858,15 +858,18 @@
             =SubmitForm(Form2_1);
             Navigate('Employee List')
         Text: ="Save"
-        X: =1158
-        Y: =702
+        X: =1170
+        Y: =699
         ZIndex: =6
 
     Label29 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =20
         Text: |-
             =
-            If(Form2_1.DisplayMode=FormMode.New,"New Form","Edit Form")
-        X: =158
+            //If(Form2_1.DisplayMode=FormMode.New,"New Form","Edit Form");
+            addUser
+        X: =30
         Y: =120
         ZIndex: =7
 

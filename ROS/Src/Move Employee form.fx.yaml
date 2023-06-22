@@ -37,8 +37,8 @@
         Height: =450
         NumberOfColumns: =2
         Width: =1261
-        X: =63
-        Y: =188
+        X: =65
+        Y: =202
         ZIndex: =5
 
         Title_DataCard6 As typedDataCard.textualEditCard:
@@ -522,11 +522,12 @@
         ZIndex: =6
 
     Label27 As label:
+        FontWeight: =FontWeight.Semibold
         Height: =72
         Size: =20
         Text: ="Fill the form to send a Request to Move employee to other Restaurant "
         Width: =962
-        X: =103
-        Y: =92
+        X: =63
+        Y: =116
         ZIndex: =7
 
