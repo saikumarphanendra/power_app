@@ -1,4 +1,4 @@
-"'employee-1_2' As screen":
+"'Move Employee form' As screen":
 
     Rectangle2_7 As rectangle:
         Fill: =RGBA(102, 182, 227, 1)
@@ -17,47 +17,47 @@
         ZIndex: =2
 
     Image5_6 As image:
-        Height: =74
+        Height: =83
         Image: ='download-removebg-preview (8)'
-        Width: =116
-        X: =105
+        Width: =128
+        X: =103
         Y: =9
         ZIndex: =3
 
     Arrow2_2 As arrow.backArrow:
         BorderColor: =RGBA(0, 94, 146, 1)
-        OnSelect: =Navigate('employee-1')
+        OnSelect: =Navigate('Employee List')
         X: =15
         Y: =25
         ZIndex: =4
 
     Form5 As form:
-        DataSource: ='Move Employee_3'
+        DataSource: ='Move Employee_4'
         Fill: =RGBA(153, 207, 236, 1)
-        Height: =514
+        Height: =450
         NumberOfColumns: =2
-        Width: =1117
-        X: =103
-        Y: =182
+        Width: =1261
+        X: =63
+        Y: =188
         ZIndex: =5
 
-        Title_DataCard5 As typedDataCard.textualEditCard:
+        Title_DataCard6 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee_3'],DataSourceInfo.DisplayName,"Title")
+            DisplayName: =DataSourceInfo([@'Move Employee_4'],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'Move Employee_3'], DataSourceInfo.MaxLength, "Title")
+            MaxLength: =DataSourceInfo([@'Move Employee_4'], DataSourceInfo.MaxLength, "Title")
             Required: =true
-            Update: =DataCardValue20.Text
-            Width: =558
+            Update: =DataCardValue33.Text
+            Width: =630
             X: =0
             Y: =0
-            ZIndex: =6
+            ZIndex: =1
 
-            DataCardKey22 As label:
+            DataCardKey35 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -67,7 +67,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue20 As text:
+            DataCardValue33 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -81,10 +81,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey22.Y + DataCardKey22.Height + 5
+                Y: =DataCardKey35.Y + DataCardKey35.Height + 5
                 ZIndex: =2
 
-            ErrorMessage22 As label:
+            ErrorMessage35 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -96,45 +96,96 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue20.Y + DataCardValue20.Height
+                Y: =DataCardValue33.Y + DataCardValue33.Height
                 ZIndex: =3
 
-            StarVisible22 As label:
+            StarVisible35 As label:
                 Align: =Align.Center
-                Height: =DataCardKey22.Height
+                Height: =DataCardKey35.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey22.Y
+                Y: =DataCardKey35.Y
                 ZIndex: =4
 
-        "'Phone number_DataCard2' As typedDataCard.comboBoxEditCard":
+        Email_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Phonenumber"
-            Default: =ThisItem.'Phone number'
+            DataField: ="Email"
+            Default: =ThisItem.Email
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee_3'],DataSourceInfo.DisplayName,"Phonenumber")
+            DisplayName: =DataSourceInfo([@'Move Employee_4'],DataSourceInfo.DisplayName,"Email")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue24.Selected
-            Width: =558
+            Update: =DataCardValue23.Selected
+            Width: =630
             X: =1
             Y: =1
             ZIndex: =6
+
+            DataCardKey25 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue23 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Move Employee_4'].Email)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Move Employee_4'.Email,DataCardValue23.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey25.Y + DataCardKey25.Height + 5
+                ZIndex: =2
+
+            ErrorMessage25 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue23.Y + DataCardValue23.Height
+                ZIndex: =3
+
+            StarVisible25 As label:
+                Align: =Align.Center
+                Height: =DataCardKey25.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey25.Y
+                ZIndex: =4
 
         EmpId_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmpId"
             Default: =ThisItem.EmpId
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee_3'],DataSourceInfo.DisplayName,"EmpId")
+            DisplayName: =DataSourceInfo([@'Move Employee_4'],DataSourceInfo.DisplayName,"EmpId")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue25.Selected
-            Width: =558
+            Width: =630
             X: =1
             Y: =0
             ZIndex: =6
@@ -154,10 +205,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_3'].EmpId)
+                Items: =Choices([@'Move Employee_4'].EmpId)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_3'.EmpId,DataCardValue25.SearchText)
+                SearchItems: =Choices('Move Employee_4'.EmpId,DataCardValue25.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -195,12 +246,12 @@
             DataField: ="RestaurantManager"
             Default: =ThisItem.'Restaurant Manager'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee_3'],DataSourceInfo.DisplayName,"RestaurantManager")
+            DisplayName: =DataSourceInfo([@'Move Employee_4'],DataSourceInfo.DisplayName,"RestaurantManager")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue26.Selected
-            Width: =558
+            Width: =630
             X: =0
             Y: =2
             ZIndex: =6
@@ -220,10 +271,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_3'].RestaurantManager)
+                Items: =Choices([@'Move Employee_4'].RestaurantManager)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_3'.RestaurantManager,DataCardValue26.SearchText)
+                SearchItems: =Choices('Move Employee_4'.RestaurantManager,DataCardValue26.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -261,12 +312,12 @@
             DataField: ="RestaurantId"
             Default: =ThisItem.'Restaurant Id'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee_3'],DataSourceInfo.DisplayName,"RestaurantId")
+            DisplayName: =DataSourceInfo([@'Move Employee_4'],DataSourceInfo.DisplayName,"RestaurantId")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue27.Selected
-            Width: =558
+            Width: =630
             X: =1
             Y: =2
             ZIndex: =6
@@ -286,10 +337,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_3'].RestaurantId)
+                Items: =Choices([@'Move Employee_4'].RestaurantId)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_3'.RestaurantId,DataCardValue27.SearchText)
+                SearchItems: =Choices('Move Employee_4'.RestaurantId,DataCardValue27.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -327,12 +378,12 @@
             DataField: ="RestauirantName"
             Default: =ThisItem.'Restaurant Name'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee_3'],DataSourceInfo.DisplayName,"RestauirantName")
+            DisplayName: =DataSourceInfo([@'Move Employee_4'],DataSourceInfo.DisplayName,"RestauirantName")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue28.Selected
-            Width: =558
+            Width: =630
             X: =0
             Y: =3
             ZIndex: =6
@@ -352,10 +403,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_3'].RestauirantName)
+                Items: =Choices([@'Move Employee_4'].RestauirantName)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_3'.RestauirantName,DataCardValue28.SearchText)
+                SearchItems: =Choices('Move Employee_4'.RestauirantName,DataCardValue28.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -393,12 +444,12 @@
             DataField: ="Name"
             Default: =ThisItem.Name
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Move Employee_3'],DataSourceInfo.DisplayName,"Name")
+            DisplayName: =DataSourceInfo([@'Move Employee_4'],DataSourceInfo.DisplayName,"Name")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
             Update: =DataCardValue31.Selected
-            Width: =558
+            Width: =630
             X: =0
             Y: =1
             ZIndex: =6
@@ -418,10 +469,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_3'].Name)
+                Items: =Choices([@'Move Employee_4'].Name)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_3'.Name,DataCardValue31.SearchText)
+                SearchItems: =Choices('Move Employee_4'.Name,DataCardValue31.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -457,7 +508,7 @@
     Button1_1 As button:
         OnSelect: |+
             =SubmitForm(Form5);
-            Navigate('employee-1_3');
+            Navigate('Move Employee A/R Details');
             ClickabuttoninPowerAppstosendanemail.Run("RajasriManasaBepeta@PratianTechnologies226.onmicrosoft.com","Move Employee Request","Manager has sent a request to Move You to other Restaurant");
             AddanitemtoSharePointandsendanemail.Run();
             
@@ -467,7 +518,7 @@
             ="Proceed
             "
         X: =1122
-        Y: =711
+        Y: =683
         ZIndex: =6
 
     Label27 As label:
@@ -475,7 +526,7 @@
         Size: =20
         Text: ="Fill the form to send a Request to Move employee to other Restaurant "
         Width: =962
-        X: =160
-        Y: =101
+        X: =103
+        Y: =92
         ZIndex: =7
 

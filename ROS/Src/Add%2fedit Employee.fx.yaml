@@ -1,4 +1,4 @@
-"'employee-1_1' As screen":
+"'Add/edit Employee' As screen":
 
     Rectangle2_6 As rectangle:
         Fill: =RGBA(102, 182, 227, 1)
@@ -17,17 +17,17 @@
         ZIndex: =2
 
     Image5_5 As image:
-        Height: =74
+        Height: =83
         Image: ='download-removebg-preview (8)'
-        Width: =116
-        X: =105
+        Width: =128
+        X: =79
         Y: =9
         ZIndex: =3
 
     Arrow2_1 As arrow.backArrow:
         BorderColor: =RGBA(0, 94, 146, 1)
         OnSelect: |+
-            =Navigate('employee-1')
+            =Navigate('Employee List')
             
         X: =15
         Y: =25
@@ -35,13 +35,15 @@
 
     Form2_1 As form:
         DataSource: =Employees
+        DefaultMode: |
+            =FormMode.Edit
         Fill: =RGBA(102, 182, 227, 1)
         Height: =490
         Item: =Gallery1_4.Selected
         NumberOfColumns: =2
         Width: =1314
-        X: =26
-        Y: =150
+        X: =30
+        Y: =188
         ZIndex: =5
 
         Title_DataCard2_1 As typedDataCard.textualEditCard:
@@ -854,9 +856,17 @@
     Button3_14 As button:
         OnSelect: |-
             =SubmitForm(Form2_1);
-            Navigate('employee-1')
+            Navigate('Employee List')
         Text: ="Save"
-        X: =1139
-        Y: =668
+        X: =1158
+        Y: =702
         ZIndex: =6
+
+    Label29 As label:
+        Text: |-
+            =
+            If(Form2_1.DisplayMode=FormMode.New,"New Form","Edit Form")
+        X: =158
+        Y: =120
+        ZIndex: =7
 

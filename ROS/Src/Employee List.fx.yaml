@@ -1,4 +1,4 @@
-"'employee-1' As screen":
+"'Employee List' As screen":
 
     Rectangle2_5 As rectangle:
         Fill: =RGBA(102, 182, 227, 1)
@@ -17,11 +17,11 @@
         ZIndex: =19
 
     Image5_4 As image:
-        Height: =74
+        Height: =85
         Image: ='download-removebg-preview (8)'
-        Width: =116
-        X: =188
-        Y: =9
+        Width: =130
+        X: =120
+        Y: =14
         ZIndex: =20
 
     Button4_3 As button:
@@ -46,7 +46,7 @@
 
     Button2_5 As button:
         Height: =36
-        OnSelect: =NewForm(Form5);Navigate('employee-1_2')
+        OnSelect: =NewForm(Form5);Navigate('Move Employee form')
         Text: ="Move Employee"
         Width: =192
         X: =1124
@@ -55,7 +55,7 @@
 
     Button5 As button:
         Height: =32
-        OnSelect: =NewForm(Form2_1);Navigate('employee-1_1')
+        OnSelect: =NewForm(Form2_1);Navigate('Add/edit Employee')
         Text: ="Add User"
         Width: =148
         X: =1162
@@ -82,6 +82,16 @@
             Order: =2
             ZIndex: =17
 
+    Label28 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        Size: =20
+        Text: ="Employees"
+        Width: =197
+        X: =49
+        Y: =103
+        ZIndex: =39
+
     Group8 As group:
         Height: =5
         Width: =5
@@ -93,8 +103,9 @@
             DelayItemLoading: =true
             Fill: =RGBA(153, 207, 236, 1)
             Height: =387
-            Items: |
-                =Filter(Employees,ThisRecord.Branch = BranchDropdown.Selected.Value)
+            Items: |+
+                =Employees
+                
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =52
@@ -203,7 +214,7 @@
             Icon4_1 As icon.NextArrow:
                 Height: =34
                 Icon: =Icon.NextArrow
-                OnSelect: =EditForm(Form2_1); Navigate('employee-1_1')
+                OnSelect: =EditForm(Form2_1); Navigate('Add/edit Employee')
                 Tooltip: ="Edit Form"
                 Width: =22
                 X: =1212

@@ -32,6 +32,9 @@
           "Move Employee_2": {
             "tableName": "39075802-9398-434e-8cdc-c82897ab4103"
           },
+          "Move Employee_4": {
+            "tableName": "39075802-9398-434e-8cdc-c82897ab4103"
+          },
           "Restaurant Manager_1": {
             "tableName": "8d6f31a4-5f8c-4b88-9bb6-680d4d617e4d"
           },
@@ -50,12 +53,13 @@
       "Restaurent login",
       "Restaurant Manager_1",
       "Move Employee_2",
-      "Move Employee Form"
+      "Move Employee Form",
+      "Move Employee_4"
     ],
     "dependencies": {},
     "dependents": [
       "903c107d-1a66-48a9-b574-e3535389fa5b",
-      "aac9eef4-c8ed-46e1-a894-be49f2383f92"
+      "e5d60de7-3ab7-4759-a881-c518353551e0"
     ],
     "id": "0984c18a-8015-4a43-8dca-24335bb2422e"
   },
@@ -69,7 +73,8 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "53057dfb-00a5-4ac2-8a46-964afad8993d"
+      "53057dfb-00a5-4ac2-8a46-964afad8993d",
+      "bb0dbc88-2944-48f9-98eb-33173ea33acb"
     ],
     "id": "40d01496-a025-4774-bc2e-5bc0c6f749d1"
   },
@@ -118,7 +123,7 @@
     "dependencies": {},
     "dependents": [
       "903c107d-1a66-48a9-b574-e3535389fa5b",
-      "aac9eef4-c8ed-46e1-a894-be49f2383f92"
+      "e5d60de7-3ab7-4759-a881-c518353551e0"
     ],
     "id": "605f8487-9356-459c-b858-c69e65dd5f6a"
   },
@@ -203,12 +208,24 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "0984c18a-8015-4a43-8dca-24335bb2422e": {
+          "value": "shared_sharepointonline"
+        },
+        "605f8487-9356-459c-b858-c69e65dd5f6a": {
+          "value": "shared_approvals"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "10824c97-4466-410b-a5de-b34a39a0bbe6"
         }
       },
       "parameterHintsV2": {
+        "shared_approvals": {
+          "value": "605f8487-9356-459c-b858-c69e65dd5f6a"
+        },
+        "shared_sharepointonline": {
+          "value": "0984c18a-8015-4a43-8dca-24335bb2422e"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "10824c97-4466-410b-a5de-b34a39a0bbe6"
