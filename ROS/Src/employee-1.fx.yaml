@@ -67,7 +67,7 @@
         DisplayMode: =DisplayMode.Edit
         Height: =32
         Items: |
-            =Branches
+            =Branches.Location 
         OnChange: =false
         Width: =320
         X: =782
@@ -94,7 +94,7 @@
             Fill: =RGBA(153, 207, 236, 1)
             Height: =387
             Items: |
-                =Employees
+                =Filter(Employees,ThisRecord.Branch = BranchDropdown.Selected.Value)
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =52
