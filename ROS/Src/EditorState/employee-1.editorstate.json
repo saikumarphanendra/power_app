@@ -29,7 +29,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "address",
-      "ParentIndex": 1,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1222,7 +1222,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DropdownCanvas1",
-      "ParentIndex": 10,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1293,7 +1293,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "empid",
-      "ParentIndex": 5,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1369,7 +1369,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "empid_1",
-      "ParentIndex": 6,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1513,7 +1513,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "FName",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1842,7 +1842,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "gender",
-      "ParentIndex": 7,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1993,7 +1993,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon4_1",
-      "ParentIndex": 11,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2577,7 +2577,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LName",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2762,7 +2762,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "mail",
-      "ParentIndex": 8,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3961,7 +3961,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TypeofEmploymnt",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

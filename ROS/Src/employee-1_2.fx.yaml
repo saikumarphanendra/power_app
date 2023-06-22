@@ -111,7 +111,7 @@
         "'Name (LName)_DataCard1' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="LName"
-            Default: =ThisItem.'Name (LName)'
+            Default: =ThisItem.LName
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Move Employee_2'],DataSourceInfo.DisplayName,"LName")
             Fill: =RGBA(0, 0, 0, 0)
@@ -138,10 +138,11 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
                 Items: =Choices([@'Move Employee_2'].LName)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_2'.LName,DataCardValue23.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -270,10 +271,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_2'].Phonenumber)
+                Items: =Choices([@'Move Employee_2'].'Phone number')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_2'.Phonenumber,DataCardValue25.SearchText)
+                SearchItems: =Choices('Move Employee_2'.'Phone number',DataCardValue25.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -402,10 +403,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_2'].RestaurantManager)
+                Items: =Choices([@'Move Employee_2'].'Restaurant Manager')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_2'.RestaurantManager,DataCardValue27.SearchText)
+                SearchItems: =Choices('Move Employee_2'.'Restaurant Manager',DataCardValue27.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -468,10 +469,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_2'].RestaurantId)
+                Items: =Choices([@'Move Employee_2'].'Restaurant Id')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_2'.RestaurantId,DataCardValue28.SearchText)
+                SearchItems: =Choices('Move Employee_2'.'Restaurant Id',DataCardValue28.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -534,10 +535,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Move Employee_2'].RestauirantName)
+                Items: =Choices([@'Move Employee_2'].'Restaurant Name')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Move Employee_2'.RestauirantName,DataCardValue29.SearchText)
+                SearchItems: =Choices('Move Employee_2'.'Restaurant Name',DataCardValue29.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
