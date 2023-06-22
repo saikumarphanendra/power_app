@@ -117,7 +117,7 @@
         LastName_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Phonenumber"
-            Default: =ThisItem.LastName
+            Default: =ThisItem.'Last Name'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Employees],DataSourceInfo.DisplayName,"Phonenumber")
             Fill: =RGBA(0, 0, 0, 0)
@@ -185,7 +185,7 @@
         PhoneNumber_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Phonenumber0"
-            Default: =ThisItem.PhoneNumber
+            Default: =ThisItem.Mobile
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Employees],DataSourceInfo.DisplayName,"Phonenumber0")
             Fill: =RGBA(0, 0, 0, 0)
@@ -319,7 +319,7 @@
         email_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="email"
-            Default: =ThisItem.email
+            Default: =ThisItem.Email
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Employees],DataSourceInfo.DisplayName,"email")
             Fill: =RGBA(0, 0, 0, 0)
@@ -387,7 +387,7 @@
         TypeOfEmployee_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="TypeofEmployee"
-            Default: =ThisItem.TypeOfEmployee
+            Default: =ThisItem.Department
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Employees],DataSourceInfo.DisplayName,"TypeofEmployee")
             Fill: =RGBA(0, 0, 0, 0)
@@ -414,10 +414,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Employees].TypeOfEmployee)
+                Items: =Choices([@Employees].Department)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Employees.TypeOfEmployee,DataCardValue9_1.SearchText)
+                SearchItems: =Choices(Employees.Department,DataCardValue9_1.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -453,7 +453,7 @@
         TypeOfEmployment_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="TypeofEmployment"
-            Default: =ThisItem.TypeOfEmployment
+            Default: =ThisItem.'Contract Type'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Employees],DataSourceInfo.DisplayName,"TypeofEmployment")
             Fill: =RGBA(0, 0, 0, 0)
@@ -480,10 +480,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Employees].TypeOfEmployment)
+                Items: =Choices([@Employees].'Contract Type')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Employees.TypeOfEmployment,DataCardValue10_1.SearchText)
+                SearchItems: =Choices(Employees.'Contract Type',DataCardValue10_1.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -652,7 +652,7 @@
         EmpId_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="EmpId"
-            Default: =ThisItem.EmpId
+            Default: =ThisItem.'Emp Id'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Employees],DataSourceInfo.DisplayName,"EmpId")
             Fill: =RGBA(0, 0, 0, 0)
@@ -720,7 +720,7 @@
         Manager_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Manager"
-            Default: =ThisItem.Manager
+            Default: =ThisItem.'Restaurant Manager'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Employees],DataSourceInfo.DisplayName,"Manager")
             Fill: =RGBA(0, 0, 0, 0)

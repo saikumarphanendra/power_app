@@ -36,55 +36,95 @@
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(153, 207, 236, 1)
         Height: =480
-        Items: ='Move Employee_2'
+        Items: ='Move Employee_4'
         Width: =830
         X: =40
         Y: =218
         ZIndex: =22
 
+        Title_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Title"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Title
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =39
+
+        "'Status _Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Status "
+            FieldName: ="Status"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Status '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =40
+
+        Date_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date"
+            FieldName: ="Date"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Date
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =41
+
         Email_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Email"
             FieldName: ="Email"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =6
+            Order: =4
             Text: =ThisItem.Email.Value
-            Width: =234
-            X: =185
+            Width: =100
+            X: =0
             Y: =0
-            ZIndex: =23
+            ZIndex: =42
+
+        "'Phone number_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Phone number"
+            FieldName: ="Phonenumber"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Phone number'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =43
 
         EmpId_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="EmpId"
             FieldName: ="EmpId"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =2
+            Order: =6
             Text: =ThisItem.EmpId.Value
-            Width: =66
-            X: =40
-            Y: =0
-            ZIndex: =25
-
-        "'Restaurant Manager_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Restaurant Manager"
-            FieldName: ="RestaurantManager"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =8
-            Text: =ThisItem.'Restaurant Manager'.Value
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =26
+            ZIndex: =44
 
         "'Restaurant Id_Column1' As dataTableColumn.textualColumn":
             DisplayMode: =DisplayMode.Edit
@@ -93,26 +133,96 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =9
+            Order: =7
             Text: =ThisItem.'Restaurant Id'.Value
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =27
+            ZIndex: =45
 
-        "'Restaurant Name_Column1' As dataTableColumn.textualColumn":
+        "'Date of Request_Column1' As dataTableColumn.textualColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Restaurant Name"
-            FieldName: ="RestauirantName"
+            FieldDisplayName: ="Date of Request"
+            FieldName: ="DateofRequest"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.'Date of Request'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =46
+
+        "'Date of A/R_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date of A/R"
+            FieldName: ="DateofA_x002f_R"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.'Date of A/R'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =47
+
+        Name_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="Name"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =10
+            Text: =ThisItem.Name.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =48
+
+        "'Restaurant Manager_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Restaurant Manager"
+            FieldName: ="RestaurantManager"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =11
+            Text: =ThisItem.'Restaurant Manager'.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =49
+
+        "'Restaurant Name_Column1' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Restaurant Name"
+            FieldName: ="RestaurantName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =12
             Text: =ThisItem.'Restaurant Name'.Value
             Width: =100
             X: =0
             Y: =0
-            ZIndex: =28
+            ZIndex: =50
+
+        Attachments_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Attachments"
+            FieldName: ="{Attachments}"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =13
+            Text: =ThisItem.Attachments
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =51
 
     DataTable2 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
@@ -187,4 +297,15 @@
         X: =1130
         Y: =135
         ZIndex: =25
+
+    Icon8_1 As icon.Sync:
+        Height: =36
+        Icon: =Icon.Sync
+        OnSelect: |-
+            =Refresh('Move Employee_1');
+            Refresh('Move Employee Form_1');
+        Width: =71
+        X: =986
+        Y: =137
+        ZIndex: =26
 

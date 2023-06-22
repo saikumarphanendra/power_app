@@ -38,6 +38,7 @@
       "ID": "ID",
       "MailID": "Mail ID",
       "ManagerName": "Manager Name",
+      "ManagerName#Id": "Manager Name Id",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "PhoneNumber": "Phone Number",

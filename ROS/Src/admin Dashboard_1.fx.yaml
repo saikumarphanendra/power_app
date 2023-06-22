@@ -77,7 +77,7 @@
 
         Label22 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.PhoneNumber
+            Text: =ThisItem.Mobile
             Width: =112
             X: =354
             Y: =17
@@ -93,7 +93,7 @@
 
         Label24 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.email
+            Text: =ThisItem.Email
             Width: =246
             X: =527
             Y: =17
@@ -101,7 +101,7 @@
 
         Label25 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.TypeOfEmployee.Value
+            Text: =ThisItem.Department.Value
             Width: =86
             X: =824
             Y: =17
@@ -109,7 +109,7 @@
 
         Label26 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.TypeOfEmployment.Value
+            Text: =ThisItem.'Contract Type'.Value
             X: =972
             Y: =17
             ZIndex: =12

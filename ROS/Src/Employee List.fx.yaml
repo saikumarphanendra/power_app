@@ -130,7 +130,7 @@
                 DisplayMode: =DisplayMode.Edit
                 Height: =34
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                Value: =ThisItem.LastName
+                Value: =ThisItem.'Last Name'
                 Width: =86
                 X: =98
                 Y: =18
@@ -140,7 +140,7 @@
                 DisplayMode: =DisplayMode.Edit
                 Height: =34
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                Value: =ThisItem.PhoneNumber
+                Value: =ThisItem.Mobile
                 Width: =110
                 X: =195
                 Y: =18
@@ -150,7 +150,7 @@
                 DisplayMode: =DisplayMode.Edit
                 Height: =30
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                Value: =ThisItem.EmpId
+                Value: =ThisItem.'Emp Id'
                 Width: =82
                 X: =1014
                 Y: =22
@@ -186,10 +186,10 @@
                     ZIndex: =12
 
             TypeofEmploymnt As Dropdown.pcfdataset:
-                DefaultSelectedItems: =ThisItem.TypeOfEmployment
+                DefaultSelectedItems: =ThisItem.'Contract Type'
                 DisplayMode: =DisplayMode.Edit
                 Height: =32
-                Items: =Choices(Employees.TypeOfEmployment)
+                Items: =Choices(Employees.'Contract Type')
                 Width: =116
                 X: =760
                 Y: =20
@@ -207,7 +207,7 @@
                 DisplayMode: =DisplayMode.Edit
                 Height: =34
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                Value: =ThisItem.email
+                Value: =ThisItem.Email
                 Width: =200
                 X: =423
                 Y: =18
@@ -229,18 +229,18 @@
                 DisplayMode: =DisplayMode.Edit
                 Height: =30
                 Mode: ='TextInputCanvas.Mode'.SingleLine
-                Value: =ThisItem.Branch
+                Value: =ThisItem.Branch.Value
                 Width: =82
                 X: =1112
                 Y: =20
                 ZIndex: =14
 
             DropdownCanvas1 As Dropdown.pcfdataset:
-                DefaultSelectedItems: =ThisItem.TypeOfEmployee
+                DefaultSelectedItems: =ThisItem.Department
                 DisplayMode: =DisplayMode.Edit
                 Height: =34
                 Items: |
-                    =Choices(Employees.TypeOfEmployee)
+                    =Choices(Employees.Department)
                 Width: =110
                 X: =640
                 Y: =18

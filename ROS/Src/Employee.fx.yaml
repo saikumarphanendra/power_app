@@ -14,7 +14,7 @@ Employee As screen:
 
         Image3 As image:
             Height: =72
-            Image: =ThisItem.'Emp image'
+            Image: =ThisItem.'Emp Image'
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
@@ -65,7 +65,7 @@ Employee As screen:
 
         Label14 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.PhoneNumber
+            Text: =ThisItem.Mobile
             X: =172
             Y: =28
             ZIndex: =7
@@ -81,7 +81,7 @@ Employee As screen:
         Label16 As label:
             Height: =39
             OnSelect: =Select(Parent)
-            Text: =ThisItem.email
+            Text: =ThisItem.Email
             Width: =272
             X: =425
             Y: =28
@@ -89,7 +89,7 @@ Employee As screen:
 
         Label17 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.TypeOfEmployee.Value
+            Text: =ThisItem.Department.Value
             Width: =64
             X: =697
             Y: =27
@@ -98,7 +98,7 @@ Employee As screen:
         Label18 As label:
             Height: =39
             OnSelect: =Select(Parent)
-            Text: =ThisItem.TypeOfEmployment.Value
+            Text: =ThisItem.'Contract Type'.Value
             Width: =110
             X: =834
             Y: =28
